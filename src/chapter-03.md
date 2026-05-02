@@ -358,11 +358,18 @@ Claude Code 是框架+模型的组合，框架本身开放，可接入支持 Ant
 Kimi Code 由月之暗面推出，与 Claude Code 架构类似。
 
 **安装方式**：
+
+**Windows（PowerShell）：**
+```powershell
+npm install -g @moonshot-ai/kimi-code
+```
+
+**macOS / Linux：**
 ```bash
-# 通过npm安装（如官方提供CLI包）
+# 方式一：通过npm安装
 npm install -g @moonshot-ai/kimi-code
 
-# 或通过官方脚本
+# 方式二：通过官方脚本
 curl -fsSL https://code.kimi.com/install.sh | bash
 ```
 

@@ -208,12 +208,12 @@ Kimi Code 是月之暗面推出的 AI 编程助手，可以直接在终端里帮
 
 **Windows（PowerShell）：**
 ```powershell
-irm https://claude.ai/install.ps1 | iex
+npm install -g @moonshot-ai/kimi-code
 ```
 
 **macOS / Linux：**
 ```bash
-curl -fsSL https://claude.ai/install.sh | bash
+curl -fsSL https://code.kimi.com/install.sh | bash
 ```
 
 等待约 5 分钟，安装程序会自动完成配置。
@@ -234,18 +234,18 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 **Windows（PowerShell）：**
 ```powershell
-[Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "sk-kimi-你的密钥", "User")
+[Environment]::SetEnvironmentVariable("KIMI_API_KEY", "sk-kimi-你的密钥", "User")
 ```
 
 **macOS（默认终端）：**
 ```bash
-echo 'export ANTHROPIC_API_KEY="sk-kimi-你的密钥"' >> ~/.zshrc
+echo 'export KIMI_API_KEY="sk-kimi-你的密钥"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
 **Linux：**
 ```bash
-echo 'export ANTHROPIC_API_KEY="sk-kimi-你的密钥"' >> ~/.bashrc
+echo 'export KIMI_API_KEY="sk-kimi-你的密钥"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -254,7 +254,7 @@ source ~/.bashrc
 在终端中输入：
 
 ```bash
-claude
+kimi
 ```
 
 你会进入 Kimi Code 的交互界面。试着跟它说句话：
@@ -292,7 +292,7 @@ python --version
 git --version
 
 # 4. Kimi Code
-claude --version
+kimi --version
 ```
 
 如果每条命令都返回了版本号，你的开发环境就搭建完成了。
