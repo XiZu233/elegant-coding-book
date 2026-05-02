@@ -228,7 +228,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 > **注意**：请妥善保管你的 API Key，不要分享给他人，也不要上传到公开的地方。
 
-**Step 3：配置环境变量**
+**Step 3：配置环境变量**（环境变量详见第06章2.2节）
 
 根据你的系统，将 API Key 配置到环境变量中：
 

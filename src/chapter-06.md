@@ -6,7 +6,7 @@
 
 ## 一、API 与网络基础
 
-![HTTP 请求-响应循环](assets/images/http-cycle.svg)
+![HTTP 请求-响应循环](assets/images/06-http-cycle.png)
 
 ### 1.1 HTTP 请求方法
 
@@ -77,7 +77,7 @@ API 出问题时，按这个顺序查：**先问"网通了吗"，再问"地址�
 
 ## 二、文件系统与路径
 
-![文件系统路径示意图](assets/images/path-system.svg)
+![文件系统路径示意图](assets/images/06-path-system.png)
 
 ### 2.1 路径系统
 

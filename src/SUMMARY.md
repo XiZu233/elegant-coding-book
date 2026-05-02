@@ -6,7 +6,7 @@
 - [03 AI编程工具入门](chapter-03.md)
 - [04 概念介绍与最佳实践](chapter-04.md)
 - [05 实战案例](chapter-05.md)
-- [06 Agent时代需要补充的知识基础](chapter-06.md)
+- [06 AI编程时代需要补充的知识基础](chapter-06.md)
 - [07 优雅编程的长期主义](chapter-07.md)
 
 ---

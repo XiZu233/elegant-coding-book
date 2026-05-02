@@ -183,7 +183,7 @@ pytest tests/ -v
 | 03 AI编程工具入门 | AI 协作示例 | `chapter-03-ai-tools/examples/` | 第一个 AI 任务 |
 | 04 概念介绍与最佳实践 | Prompt 示例 | `chapter-04-best-practices/examples/` | Prompt 改写 |
 | 05 实战案例 | 两个完整项目 | `chapter-05-projects/` | 项目练习模板 |
-| 06 Agent时代知识基础 | 网络/路径/环境示例 | `chapter-06-agent-knowledge/examples/` | API 调试挑战 |
+| 06 AI编程时代知识基础 | 网络/路径/环境示例 | `chapter-06-agent-knowledge/examples/` | API 调试挑战 |
 | 07 优雅编程的长期主义 | 学习计划模板 | `chapter-07-long-term/` | 个人学习规划 |
 
 ## 如何使用本仓库

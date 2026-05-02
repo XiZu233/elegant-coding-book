@@ -1,10 +1,10 @@
-根据 Claude Code 官方中文文档的全部内容，我为你整理了一份 **AI 编程（Agentic Coding）概念介绍与最佳实践** 的完整指南。
-
----
-
 # AI 编程（Agentic Coding）概念介绍与最佳实践
 
-> 基于 [Claude Code 官方文档](https://code.claude.com/docs/zh-CN/) 整理
+学完了怎么安装工具（第01章）、怎么写代码（第02章）、怎么用AI工具（第03章），这一章要让你真正理解——当你对AI说"帮我做这个"的时候，背后发生了什么？
+
+我们会从Claude Code的底层原理讲起，把"Agentic Loop""Context Window""权限模式"这些核心概念逐个拆解。你不需要记住每个术语，但读完之后，你会知道为什么AI有时候"忘记"了前面的对话、为什么它要反复问你"是否执行"、以及怎样配置才能让它更高效地工作。
+
+本章内容基于 [Claude Code 官方文档](https://code.claude.com/docs/zh-CN/) 整理。
 
 ---
 
@@ -31,7 +31,7 @@ Claude Code 是一个**代理框架（Agentic Harness）**，它将语言模型�
 
 当你给 Claude 一个任务时，它会经历三个融合的阶段：
 
-![Agentic Loop 循环示意图](assets/images/agent-loop.svg)
+![Agentic Loop 循环示意图](assets/images/04-agent-loop.png)
 
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
@@ -89,10 +89,10 @@ Claude Code 是一个**代理框架（Agentic Harness）**，它将语言模型�
 | **Hook** | 在 Claude 生命周期特定点自动执行的确定性脚本（如文件编辑后运行 ESLint） |
 | **Plugin** | 将 skills、hooks、subagents 和 MCP 服务器打包为单个可安装单元 |
 | **Checkpoint** | 每次文件编辑前的自动快照，可按 `Esc` 两次或 `/rewind` 回退 |
-| **Permission Mode** | 控制 Claude 是否需要批准：default / acceptEdits / plan / auto / dontAsk |
+| **Permission Mode** | 控制 Claude 是否需要批准：default / acceptEdits / plan / auto / dontAsk（详见本章第7节） |
 | **Plan Mode** | 只读分析模式，Claude 研究并提议更改但不编辑文件，适合复杂变更前的规划 |
 | **Auto Mode** | 分类器模型后台审查操作，自动批准安全操作，阻止风险操作 |
-| **Sandboxing** | Bash 命令的操作系统级文件系统和网络隔离 |
+| **Sandboxing** | Bash 命令的操作系统级文件系统和网络隔离（详见本章第7节） |
 
 ---
 
@@ -348,5 +348,14 @@ enhance the PR description with more context
 
 ## 九、下一步：弄懂那些"幕后知识"
 
-第04章让你掌握了 AI 编程工具的操作方法和最佳实践，但 Agent 报错时你会看到 HTTP、JSON、路径、端口等术语——第06章将帮你弄懂这些"幕后知识"，让你能读懂报错、精准描述问题。
+第04章让你掌握了 AI 编程工具的操作方法和最佳实践。但当你真正开始用AI工具做项目时，很快会遇到一些让你困惑的报错信息：
+
+- "Connection refused on port 8080"（端口是什么？为什么被拒绝？）
+- "JSON parse error"（JSON是什么？为什么解析失败？）
+- "FileNotFoundError: path does not exist"（路径怎么写才对？）
+- "401 Unauthorized"（HTTP状态码是什么意思？）
+
+这些术语——HTTP、JSON、路径、端口、环境变量——就是本章提到的"幕后知识"。第04章让你知道"怎么操作"，但Agent报错时你会看到这些术语反复出现。**第06章就是帮你弄懂这些"幕后知识"**，让你能读懂报错、精准描述问题，而不是对着屏幕发呆。
+
+第06章还会补充文件系统、依赖管理、Docker容器等概念。这些不是让你立刻成为专家，而是让你在使用AI工具时，能听懂它在说什么、能准确描述你遇到的问题。
 
