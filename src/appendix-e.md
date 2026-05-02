@@ -146,8 +146,8 @@ ai-era-elegant-coding/
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/你的用户名/ai-era-elegant-coding.git
-cd ai-era-elegant-coding
+git clone https://github.com/XiZu233/elegant-coding-book.git
+cd elegant-coding-book
 ```
 
 ### 2. 创建虚拟环境
@@ -196,15 +196,15 @@ pytest tests/ -v
 
 ### 贡献者
 
-参见 [CONTRIBUTING.md](docs/CONTRIBUTING.md)。
+参见 [CONTRIBUTING.md](https://github.com/XiZu233/elegant-coding-book/blob/main/docs/CONTRIBUTING.md)。
 
 ## 自动化测试状态
 
-![Tests](https://github.com/你的用户名/ai-era-elegant-coding/workflows/test-examples/badge.svg)
+![Tests](https://github.com/XiZu233/elegant-coding-book/actions/workflows/test-examples.yml/badge.svg)
 
 ## 许可证
 
-MIT License - 详见 [LICENSE](LICENSE)
+MIT License - 详见 [LICENSE](https://github.com/XiZu233/elegant-coding-book/blob/main/LICENSE)
 ```
 
 ---
