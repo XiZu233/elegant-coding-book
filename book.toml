@@ -15,6 +15,7 @@ preferred-dark-theme = "navy"
 smart-punctuation = true
 copy-fonts = true
 no-section-label = false
+site-url = "/elegant-coding-book/"
 
 [output.html.search]
 enable = true
