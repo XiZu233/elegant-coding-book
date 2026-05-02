@@ -1,0 +1,570 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "跳转到主要内容" [ref=e3] [cursor=pointer]:
+      - /url: "#content-area"
+    - generic [ref=e5]:
+      - generic [ref=e9]:
+        - generic [ref=e12]:
+          - generic [ref=e13]:
+            - link "Claude Code Docs home page light logo" [ref=e14] [cursor=pointer]:
+              - /url: /docs/zh-CN/overview
+              - generic [ref=e15]: Claude Code Docs home page
+              - img "light logo" [ref=e16]
+            - button "简体中文" [ref=e18] [cursor=pointer]:
+              - generic [ref=e19]: 简体中文
+              - img [ref=e20]
+          - generic [ref=e22]:
+            - button "打开搜索" [ref=e23] [cursor=pointer]:
+              - generic [ref=e24]:
+                - img [ref=e25]
+                - generic [ref=e28]: 搜索...
+              - generic [ref=e29]: Ctrl K
+            - button "切换助手面板" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+              - generic [ref=e34]: 询问AI
+          - generic [ref=e35]:
+            - navigation [ref=e36]:
+              - list [ref=e37]:
+                - listitem [ref=e38]:
+                  - link "Claude Developer Platform" [ref=e39] [cursor=pointer]:
+                    - /url: https://platform.claude.com/
+                - listitem [ref=e40]:
+                  - link "Claude Code on the Web" [ref=e41] [cursor=pointer]:
+                    - /url: https://claude.ai/code
+                    - generic [ref=e43]:
+                      - generic [ref=e44]: Claude Code on the Web
+                      - img [ref=e45]
+            - button "切换深色模式" [ref=e48] [cursor=pointer]:
+              - img [ref=e49]
+        - generic [ref=e57]:
+          - link "快速开始" [ref=e58] [cursor=pointer]:
+            - /url: /docs/zh-CN/overview
+            - text: 快速开始
+          - link "使用 Claude Code 构建" [ref=e60] [cursor=pointer]:
+            - /url: /docs/zh-CN/sub-agents
+            - text: 使用 Claude Code 构建
+          - link "管理" [ref=e62] [cursor=pointer]:
+            - /url: /docs/zh-CN/admin-setup
+            - text: 管理
+          - link "配置" [ref=e64] [cursor=pointer]:
+            - /url: /docs/zh-CN/settings
+            - text: 配置
+          - link "参考" [ref=e66] [cursor=pointer]:
+            - /url: /docs/zh-CN/cli-reference
+            - text: 参考
+          - link "Agent SDK" [ref=e68] [cursor=pointer]:
+            - /url: /docs/zh-CN/agent-sdk/overview
+            - text: Agent SDK
+          - link "最新动态" [ref=e70] [cursor=pointer]:
+            - /url: /docs/zh-CN/whats-new
+            - text: 最新动态
+          - link "资源" [ref=e72] [cursor=pointer]:
+            - /url: /docs/zh-CN/legal-and-compliance
+            - text: 资源
+      - generic [ref=e74]:
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - heading "快速开始" [level=5] [ref=e81]
+            - list [ref=e82]:
+              - listitem [ref=e83]:
+                - link "概述" [ref=e84] [cursor=pointer]:
+                  - /url: /docs/zh-CN/overview
+                  - generic [ref=e87]: 概述
+              - listitem [ref=e88]:
+                - link "快速开始" [ref=e89] [cursor=pointer]:
+                  - /url: /docs/zh-CN/quickstart
+                  - generic [ref=e92]: 快速开始
+              - listitem [ref=e93]:
+                - link "更新日志" [ref=e94] [cursor=pointer]:
+                  - /url: https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
+                  - generic [ref=e95]:
+                    - generic [ref=e97]: 更新日志
+                    - img [ref=e99]
+          - generic [ref=e101]:
+            - heading "核心概念" [level=5] [ref=e103]
+            - list [ref=e104]:
+              - listitem [ref=e105]:
+                - link "Claude Code 如何工作" [ref=e106] [cursor=pointer]:
+                  - /url: /docs/zh-CN/how-claude-code-works
+                  - generic [ref=e109]: Claude Code 如何工作
+              - listitem [ref=e110]:
+                - link "扩展 Claude Code" [ref=e111] [cursor=pointer]:
+                  - /url: /docs/zh-CN/features-overview
+                  - generic [ref=e114]: 扩展 Claude Code
+              - listitem [ref=e115]:
+                - link "探索 .claude 目录" [ref=e116] [cursor=pointer]:
+                  - /url: /docs/zh-CN/claude-directory
+                  - generic [ref=e119]: 探索 .claude 目录
+              - listitem [ref=e120]:
+                - link "Context window" [ref=e121] [cursor=pointer]:
+                  - /url: /docs/zh-CN/context-window
+                  - generic [ref=e124]: Context window
+          - generic [ref=e125]:
+            - heading "使用 Claude Code" [level=5] [ref=e127]
+            - list [ref=e128]:
+              - listitem [ref=e129]:
+                - link "存储指令和记忆" [ref=e130] [cursor=pointer]:
+                  - /url: /docs/zh-CN/memory
+                  - generic [ref=e133]: 存储指令和记忆
+              - listitem [ref=e134]:
+                - link "权限模式" [ref=e135] [cursor=pointer]:
+                  - /url: /docs/zh-CN/permission-modes
+                  - generic [ref=e138]: 权限模式
+              - listitem [ref=e139]:
+                - link "常见工作流程" [ref=e140] [cursor=pointer]:
+                  - /url: /docs/zh-CN/common-workflows
+                  - generic [ref=e143]: 常见工作流程
+              - listitem [ref=e144]:
+                - link "Claude Code 最佳实践" [ref=e145] [cursor=pointer]:
+                  - /url: /docs/zh-CN/best-practices
+                  - generic [ref=e148]: Claude Code 最佳实践
+          - generic [ref=e149]:
+            - heading "平台和集成" [level=5] [ref=e151]
+            - list [ref=e152]:
+              - listitem [ref=e153]:
+                - link "概览" [ref=e154] [cursor=pointer]:
+                  - /url: /docs/zh-CN/platforms
+                  - generic [ref=e157]: 概览
+              - listitem [ref=e158]:
+                - link "Remote Control" [ref=e159] [cursor=pointer]:
+                  - /url: /docs/zh-CN/remote-control
+                  - generic [ref=e162]: Remote Control
+              - listitem [ref=e163]:
+                - button "切换Claude Code 网页版部分" [ref=e164] [cursor=pointer]:
+                  - generic [ref=e165]: Claude Code 网页版
+                  - img [ref=e167]
+              - listitem [ref=e169]:
+                - button "切换Claude Code 桌面版部分" [ref=e170] [cursor=pointer]:
+                  - generic [ref=e171]: Claude Code 桌面版
+                  - img [ref=e173]
+              - listitem [ref=e175]:
+                - link "Chrome 扩展程序（测试版）" [ref=e176] [cursor=pointer]:
+                  - /url: /docs/zh-CN/chrome
+                  - generic [ref=e179]: Chrome 扩展程序（测试版）
+              - listitem [ref=e180]:
+                - link "Computer use (preview)" [ref=e181] [cursor=pointer]:
+                  - /url: /docs/zh-CN/computer-use
+                  - generic [ref=e184]: Computer use (preview)
+              - listitem [ref=e185]:
+                - link "在 VS Code 中使用 Claude Code" [ref=e186] [cursor=pointer]:
+                  - /url: /docs/zh-CN/vs-code
+                  - generic [ref=e189]: 在 VS Code 中使用 Claude Code
+              - listitem [ref=e190]:
+                - link "JetBrains IDEs" [ref=e191] [cursor=pointer]:
+                  - /url: /docs/zh-CN/jetbrains
+                  - generic [ref=e194]: JetBrains IDEs
+              - listitem [ref=e195]:
+                - button "切换代码审查与 CI/CD部分" [ref=e196] [cursor=pointer]:
+                  - generic [ref=e197]: 代码审查与 CI/CD
+                  - img [ref=e199]
+              - listitem [ref=e201]:
+                - link "Slack 中的 Claude Code" [ref=e202] [cursor=pointer]:
+                  - /url: /docs/zh-CN/slack
+                  - generic [ref=e205]: Slack 中的 Claude Code
+        - generic [ref=e208]:
+          - banner [ref=e209]:
+            - generic [ref=e210]:
+              - generic [ref=e211]: 快速开始
+              - generic [ref=e212]:
+                - heading "Claude Code 概述" [level=1] [ref=e213]
+                - generic [ref=e214]:
+                  - button "复制页面" [ref=e215] [cursor=pointer]:
+                    - generic [ref=e216]:
+                      - img [ref=e217]
+                      - generic [ref=e220]: 复制页面
+                  - button "更多操作" [ref=e221] [cursor=pointer]:
+                    - img [ref=e222]
+            - paragraph [ref=e225]: Claude Code 是一个代理编码工具，可以读取你的代码库、编辑文件、运行命令，并与你的开发工具集成。可在终端、IDE、桌面应用和浏览器中使用。
+          - generic [ref=e226]:
+            - blockquote [ref=e227]:
+              - heading "Documentation Index" [level=2] [ref=e228]
+              - paragraph [ref=e229]:
+                - text: "Fetch the complete documentation index at:"
+                - link "https://code.claude.com/docs/llms.txt" [ref=e230] [cursor=pointer]:
+                  - /url: https://code.claude.com/docs/llms.txt
+              - paragraph [ref=e231]: Use this file to discover all available pages before exploring further.
+            - generic [ref=e232]: Claude Code 是一个由 AI 驱动的编码助手，可帮助你构建功能、修复错误和自动化开发任务。它理解你的整个代码库，可以跨多个文件和工具工作以完成任务。
+            - heading "导航到标题 开始使用" [level=2] [ref=e233]:
+              - link "导航到标题" [ref=e234] [cursor=pointer]:
+                - /url: "#开始使用"
+                - img [ref=e236]
+              - generic [ref=e238] [cursor=pointer]: 开始使用
+            - generic [ref=e239]:
+              - text: 选择你的环境来开始使用。大多数界面需要
+              - link "Claude 订阅" [ref=e240] [cursor=pointer]:
+                - /url: https://claude.com/pricing?utm_source=claude_code&utm_medium=docs&utm_content=overview_pricing
+              - text: 或
+              - link "Anthropic 控制台" [ref=e241] [cursor=pointer]:
+                - /url: https://console.anthropic.com/
+              - text: 账户。终端 CLI 和 VS Code 也支持
+              - link "第三方提供商" [ref=e242] [cursor=pointer]:
+                - /url: /docs/zh-CN/third-party-integrations
+              - text: 。
+            - generic [ref=e243]:
+              - tablist [ref=e244]:
+                - tab "Terminal" [selected] [ref=e245] [cursor=pointer]:
+                  - generic [ref=e246]: Terminal
+                - tab "VS Code" [ref=e247] [cursor=pointer]:
+                  - generic [ref=e248]: VS Code
+                - tab "Desktop app" [ref=e249] [cursor=pointer]:
+                  - generic [ref=e250]: Desktop app
+                - tab "Web" [ref=e251] [cursor=pointer]:
+                  - generic [ref=e252]: Web
+                - tab "JetBrains" [ref=e253] [cursor=pointer]:
+                  - generic [ref=e254]: JetBrains
+              - tabpanel [ref=e256]:
+                - generic [ref=e257]: 功能完整的 CLI，用于直接在终端中使用 Claude Code。编辑文件、运行命令，并从命令行管理整个项目。
+                - generic [ref=e258]: "To install Claude Code, use one of the following methods:"
+                - generic [ref=e259]:
+                  - tablist [ref=e260]:
+                    - tab "Native Install (Recommended)" [selected] [ref=e261] [cursor=pointer]:
+                      - generic [ref=e262]: Native Install (Recommended)
+                    - tab "Homebrew" [ref=e263] [cursor=pointer]:
+                      - generic [ref=e264]: Homebrew
+                    - tab "WinGet" [ref=e265] [cursor=pointer]:
+                      - generic [ref=e266]: WinGet
+                  - tabpanel [ref=e268]:
+                    - strong [ref=e270]: "macOS, Linux, WSL:"
+                    - generic [ref=e271]:
+                      - generic [ref=e272]:
+                        - button "报告错误代码" [ref=e274] [cursor=pointer]:
+                          - img [ref=e275]
+                        - button "复制代码块内容" [ref=e278] [cursor=pointer]:
+                          - img [ref=e279]
+                        - button "询问AI" [ref=e283] [cursor=pointer]:
+                          - img [ref=e284]
+                      - code [ref=e290]:
+                        - generic [ref=e291]: curl -fsSL https://claude.ai/install.sh | bash
+                    - strong [ref=e293]: "Windows PowerShell:"
+                    - generic [ref=e294]:
+                      - generic [ref=e295]:
+                        - button "报告错误代码" [ref=e297] [cursor=pointer]:
+                          - img [ref=e298]
+                        - button "复制代码块内容" [ref=e301] [cursor=pointer]:
+                          - img [ref=e302]
+                        - button "询问AI" [ref=e306] [cursor=pointer]:
+                          - img [ref=e307]
+                      - code [ref=e313]:
+                        - generic [ref=e314]: irm https://claude.ai/install.ps1 | iex
+                    - strong [ref=e316]: "Windows CMD:"
+                    - generic [ref=e317]:
+                      - generic [ref=e318]:
+                        - button "报告错误代码" [ref=e320] [cursor=pointer]:
+                          - img [ref=e321]
+                        - button "复制代码块内容" [ref=e324] [cursor=pointer]:
+                          - img [ref=e325]
+                        - button "询问AI" [ref=e329] [cursor=pointer]:
+                          - img [ref=e330]
+                      - code [ref=e336]:
+                        - generic [ref=e337]: curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+                    - generic [ref=e338]:
+                      - text: If you see
+                      - code [ref=e339]: The token '&&' is not a valid statement separator
+                      - text: ", you’re in PowerShell, not CMD. If you see"
+                      - code [ref=e340]: "'irm' is not recognized as an internal or external command"
+                      - text: ", you’re in CMD, not PowerShell. Your prompt shows"
+                      - code [ref=e341]: PS C:\
+                      - text: when you’re in PowerShell and
+                      - code [ref=e342]: C:\
+                      - text: without the
+                      - code [ref=e343]: PS
+                      - text: when you’re in CMD.
+                    - generic [ref=e344]:
+                      - link "Git for Windows" [ref=e345] [cursor=pointer]:
+                        - /url: https://git-scm.com/downloads/win
+                      - text: is recommended on native Windows so Claude Code can use the Bash tool. If Git for Windows is not installed, Claude Code uses PowerShell as the shell tool instead. WSL setups do not need Git for Windows.
+                    - generic [ref=e346]:
+                      - img "信息" [ref=e348]
+                      - generic [ref=e351]: Native installations automatically update in the background to keep you on the latest version.
+                - generic [ref=e352]:
+                  - text: You can also install with
+                  - link "apt, dnf, or apk" [ref=e353] [cursor=pointer]:
+                    - /url: /docs/en/setup#install-with-linux-package-managers
+                  - text: on Debian, Fedora, RHEL, and Alpine.
+                - generic [ref=e354]: 然后在任何项目中启动 Claude Code：
+                - generic [ref=e355]:
+                  - generic [ref=e356]:
+                    - button "报告错误代码" [ref=e358] [cursor=pointer]:
+                      - img [ref=e359]
+                    - button "复制代码块内容" [ref=e362] [cursor=pointer]:
+                      - img [ref=e363]
+                    - button "询问AI" [ref=e367] [cursor=pointer]:
+                      - img [ref=e368]
+                  - code [ref=e374]:
+                    - generic [ref=e375]: cd your-project
+                    - generic [ref=e376]: claude
+                - generic [ref=e377]:
+                  - text: 首次使用时，系统会提示你登录。就这样！
+                  - link "继续快速入门 →" [ref=e378] [cursor=pointer]:
+                    - /url: /docs/zh-CN/quickstart
+                - generic [ref=e379]:
+                  - img "提示" [ref=e381]
+                  - generic [ref=e384]:
+                    - text: 查看
+                    - link "高级设置" [ref=e385] [cursor=pointer]:
+                      - /url: /docs/zh-CN/setup
+                    - text: 了解安装选项、手动更新或卸载说明。如果遇到问题，请访问
+                    - link "安装故障排除" [ref=e386] [cursor=pointer]:
+                      - /url: /docs/zh-CN/troubleshoot-install
+                    - text: 。
+            - heading "导航到标题 你可以做什么" [level=2] [ref=e387]:
+              - link "导航到标题" [ref=e388] [cursor=pointer]:
+                - /url: "#你可以做什么"
+                - img [ref=e390]
+              - generic [ref=e392] [cursor=pointer]: 你可以做什么
+            - generic [ref=e393]: 以下是你可以使用 Claude Code 的一些方式：
+            - generic [ref=e394]:
+              - group [ref=e395]:
+                - generic "自动化你一直在推迟的工作" [ref=e396] [cursor=pointer]:
+                  - img [ref=e398]
+                  - img [ref=e400]
+                  - paragraph [ref=e402]: 自动化你一直在推迟的工作
+              - group [ref=e403]:
+                - generic "构建功能和修复错误" [ref=e404] [cursor=pointer]:
+                  - img [ref=e406]
+                  - img [ref=e408]
+                  - paragraph [ref=e410]: 构建功能和修复错误
+              - group [ref=e411]:
+                - generic "创建提交和拉取请求" [ref=e412] [cursor=pointer]:
+                  - img [ref=e414]
+                  - img [ref=e416]
+                  - paragraph [ref=e418]: 创建提交和拉取请求
+              - group [ref=e419]:
+                - generic "使用 MCP 连接你的工具" [ref=e420] [cursor=pointer]:
+                  - img [ref=e422]
+                  - img [ref=e424]
+                  - paragraph [ref=e426]: 使用 MCP 连接你的工具
+              - group [ref=e427]:
+                - generic "使用说明、skills 和 hooks 进行自定义" [ref=e428] [cursor=pointer]:
+                  - img [ref=e430]
+                  - img [ref=e432]
+                  - paragraph [ref=e434]: 使用说明、skills 和 hooks 进行自定义
+              - group [ref=e435]:
+                - generic "运行代理团队并构建自定义代理" [ref=e436] [cursor=pointer]:
+                  - img [ref=e438]
+                  - img [ref=e440]
+                  - paragraph [ref=e442]: 运行代理团队并构建自定义代理
+              - group [ref=e443]:
+                - generic "使用 CLI 进行管道、脚本和自动化" [ref=e444] [cursor=pointer]:
+                  - img [ref=e446]
+                  - img [ref=e448]
+                  - paragraph [ref=e450]: 使用 CLI 进行管道、脚本和自动化
+              - group [ref=e451]:
+                - generic "安排定期任务" [ref=e452] [cursor=pointer]:
+                  - img [ref=e454]
+                  - img [ref=e456]
+                  - paragraph [ref=e458]: 安排定期任务
+              - group [ref=e459]:
+                - generic "从任何地方工作" [ref=e460] [cursor=pointer]:
+                  - img [ref=e462]
+                  - img [ref=e464]
+                  - paragraph [ref=e466]: 从任何地方工作
+            - heading "导航到标题 在任何地方使用 Claude Code" [level=2] [ref=e467]:
+              - link "导航到标题" [ref=e468] [cursor=pointer]:
+                - /url: "#在任何地方使用-claude-code"
+                - img [ref=e470]
+              - generic [ref=e472] [cursor=pointer]: 在任何地方使用 Claude Code
+            - generic [ref=e473]: 每个界面都连接到相同的底层 Claude Code 引擎，因此你的 CLAUDE.md 文件、设置和 MCP 服务器可在所有界面中工作。
+            - generic [ref=e474]:
+              - text: 除了上面的
+              - link "终端" [ref=e475] [cursor=pointer]:
+                - /url: /docs/zh-CN/quickstart
+              - text: 、
+              - link "VS Code" [ref=e476] [cursor=pointer]:
+                - /url: /docs/zh-CN/vs-code
+              - text: 、
+              - link "JetBrains" [ref=e477] [cursor=pointer]:
+                - /url: /docs/zh-CN/jetbrains
+              - text: 、
+              - link "桌面" [ref=e478] [cursor=pointer]:
+                - /url: /docs/zh-CN/desktop
+              - text: 和
+              - link "网络" [ref=e479] [cursor=pointer]:
+                - /url: /docs/zh-CN/claude-code-on-the-web
+              - text: 环境外，Claude Code 还与 CI/CD、聊天和浏览器工作流集成：
+            - table [ref=e482]:
+              - rowgroup [ref=e483]:
+                - row "我想要… 最佳选项" [ref=e484]:
+                  - columnheader "我想要…" [ref=e485]
+                  - columnheader "最佳选项" [ref=e486]
+              - rowgroup [ref=e487]:
+                - row "从我的手机或另一台设备继续本地会话 远程控制" [ref=e488]:
+                  - cell "从我的手机或另一台设备继续本地会话" [ref=e489]
+                  - cell "远程控制" [ref=e490]:
+                    - link "远程控制" [ref=e491] [cursor=pointer]:
+                      - /url: /docs/zh-CN/remote-control
+                - row "从 Telegram、Discord、iMessage 或我自己的 webhook 推送事件到会话中 Channels" [ref=e492]:
+                  - cell "从 Telegram、Discord、iMessage 或我自己的 webhook 推送事件到会话中" [ref=e493]
+                  - cell "Channels" [ref=e494]:
+                    - link "Channels" [ref=e495] [cursor=pointer]:
+                      - /url: /docs/zh-CN/channels
+                - row "在本地启动任务，在移动设备上继续 网络或 Claude iOS 应用" [ref=e496]:
+                  - cell "在本地启动任务，在移动设备上继续" [ref=e497]
+                  - cell "网络或 Claude iOS 应用" [ref=e498]:
+                    - link "网络" [ref=e499] [cursor=pointer]:
+                      - /url: /docs/zh-CN/claude-code-on-the-web
+                    - text: 或
+                    - link "Claude iOS 应用" [ref=e500] [cursor=pointer]:
+                      - /url: https://apps.apple.com/app/claude-by-anthropic/id6473753684
+                - row "按定期计划运行 Claude Routines 或桌面计划任务" [ref=e501]:
+                  - cell "按定期计划运行 Claude" [ref=e502]
+                  - cell "Routines 或桌面计划任务" [ref=e503]:
+                    - link "Routines" [ref=e504] [cursor=pointer]:
+                      - /url: /docs/zh-CN/routines
+                    - text: 或
+                    - link "桌面计划任务" [ref=e505] [cursor=pointer]:
+                      - /url: /docs/zh-CN/desktop-scheduled-tasks
+                - row "自动化 PR 审查和问题分类 GitHub Actions 或 GitLab CI/CD" [ref=e506]:
+                  - cell "自动化 PR 审查和问题分类" [ref=e507]
+                  - cell "GitHub Actions 或 GitLab CI/CD" [ref=e508]:
+                    - link "GitHub Actions" [ref=e509] [cursor=pointer]:
+                      - /url: /docs/zh-CN/github-actions
+                    - text: 或
+                    - link "GitLab CI/CD" [ref=e510] [cursor=pointer]:
+                      - /url: /docs/zh-CN/gitlab-ci-cd
+                - row "在每个 PR 上获得自动代码审查 GitHub Code Review" [ref=e511]:
+                  - cell "在每个 PR 上获得自动代码审查" [ref=e512]
+                  - cell "GitHub Code Review" [ref=e513]:
+                    - link "GitHub Code Review" [ref=e514] [cursor=pointer]:
+                      - /url: /docs/zh-CN/code-review
+                - row "将 Slack 中的错误报告路由到拉取请求 Slack" [ref=e515]:
+                  - cell "将 Slack 中的错误报告路由到拉取请求" [ref=e516]
+                  - cell "Slack" [ref=e517]:
+                    - link "Slack" [ref=e518] [cursor=pointer]:
+                      - /url: /docs/zh-CN/slack
+                - row "调试实时网络应用 Chrome" [ref=e519]:
+                  - cell "调试实时网络应用" [ref=e520]
+                  - cell "Chrome" [ref=e521]:
+                    - link "Chrome" [ref=e522] [cursor=pointer]:
+                      - /url: /docs/zh-CN/chrome
+                - row "为你自己的工作流构建自定义代理 Agent SDK" [ref=e523]:
+                  - cell "为你自己的工作流构建自定义代理" [ref=e524]
+                  - cell "Agent SDK" [ref=e525]:
+                    - link "Agent SDK" [ref=e526] [cursor=pointer]:
+                      - /url: /docs/zh-CN/agent-sdk/overview
+            - heading "导航到标题 后续步骤" [level=2] [ref=e527]:
+              - link "导航到标题" [ref=e528] [cursor=pointer]:
+                - /url: "#后续步骤"
+                - img [ref=e530]
+              - generic [ref=e532] [cursor=pointer]: 后续步骤
+            - generic [ref=e533]: 安装 Claude Code 后，这些指南可帮助你深入了解。
+            - list [ref=e534]:
+              - listitem [ref=e535]:
+                - link "快速入门" [ref=e536] [cursor=pointer]:
+                  - /url: /docs/zh-CN/quickstart
+                - text: ：通过你的第一个真实任务，从探索代码库到提交修复
+              - listitem [ref=e537]:
+                - link "存储说明和内存" [ref=e538] [cursor=pointer]:
+                  - /url: /docs/zh-CN/memory
+                - text: ：使用 CLAUDE.md 文件和自动内存为 Claude 提供持久说明
+              - listitem [ref=e539]:
+                - link "常见工作流" [ref=e540] [cursor=pointer]:
+                  - /url: /docs/zh-CN/common-workflows
+                - text: 和
+                - link "最佳实践" [ref=e541] [cursor=pointer]:
+                  - /url: /docs/zh-CN/best-practices
+                - text: ：充分利用 Claude Code 的模式
+              - listitem [ref=e542]:
+                - link "设置" [ref=e543] [cursor=pointer]:
+                  - /url: /docs/zh-CN/settings
+                - text: ：为你的工作流自定义 Claude Code
+              - listitem [ref=e544]:
+                - link "故障排除" [ref=e545] [cursor=pointer]:
+                  - /url: /docs/zh-CN/troubleshooting
+                - text: ：常见问题的解决方案
+              - listitem [ref=e546]:
+                - link "code.claude.com" [ref=e547] [cursor=pointer]:
+                  - /url: https://code.claude.com/
+                - text: ：演示、定价和产品详情
+          - generic [ref=e549]:
+            - paragraph [ref=e550]: 此页面对您有帮助吗？
+            - generic [ref=e552]:
+              - button "是" [ref=e553] [cursor=pointer]:
+                - img [ref=e554]
+                - generic [ref=e556]: 是
+              - button "否" [ref=e557] [cursor=pointer]:
+                - img [ref=e558]
+                - generic [ref=e560]: 否
+          - link "快速开始" [ref=e562] [cursor=pointer]:
+            - /url: /docs/zh-CN/quickstart
+            - generic [ref=e563]: 快速开始
+            - img [ref=e564]
+          - generic [ref=e567]:
+            - textbox "提出问题..." [ref=e568]
+            - generic: Ctrl+I
+            - button "发送消息" [disabled] [ref=e569]:
+              - img [ref=e570]
+      - contentinfo [ref=e572]:
+        - generic [ref=e574]:
+          - generic [ref=e575]:
+            - link "Claude Code Docs home page light logo" [ref=e576] [cursor=pointer]:
+              - /url: /docs/zh-CN/overview
+              - generic [ref=e577]: Claude Code Docs home page
+              - img "light logo" [ref=e578]
+            - generic [ref=e579]:
+              - link "x" [ref=e580] [cursor=pointer]:
+                - /url: https://x.com/AnthropicAI
+                - generic [ref=e581]: x
+                - img [ref=e582]
+              - link "linkedin" [ref=e583] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/anthropicresearch
+                - generic [ref=e584]: linkedin
+                - img [ref=e585]
+          - generic [ref=e586]:
+            - generic [ref=e588]:
+              - paragraph [ref=e589]: Company
+              - link "Anthropic" [ref=e590] [cursor=pointer]:
+                - /url: https://www.anthropic.com/company
+              - link "Careers" [ref=e591] [cursor=pointer]:
+                - /url: https://www.anthropic.com/careers
+              - link "Economic Futures" [ref=e592] [cursor=pointer]:
+                - /url: https://www.anthropic.com/economic-futures
+              - link "Research" [ref=e593] [cursor=pointer]:
+                - /url: https://www.anthropic.com/research
+              - link "News" [ref=e594] [cursor=pointer]:
+                - /url: https://www.anthropic.com/news
+              - link "Trust center" [ref=e595] [cursor=pointer]:
+                - /url: https://trust.anthropic.com/
+              - link "Transparency" [ref=e596] [cursor=pointer]:
+                - /url: https://www.anthropic.com/transparency
+            - generic [ref=e598]:
+              - paragraph [ref=e599]: Help and security
+              - link "Availability" [ref=e600] [cursor=pointer]:
+                - /url: https://www.anthropic.com/supported-countries
+              - link "Status" [ref=e601] [cursor=pointer]:
+                - /url: https://status.anthropic.com/
+              - link "Support center" [ref=e602] [cursor=pointer]:
+                - /url: https://support.claude.com/
+            - generic [ref=e604]:
+              - paragraph [ref=e605]: Learn
+              - link "Courses" [ref=e606] [cursor=pointer]:
+                - /url: https://www.anthropic.com/learn
+              - link "MCP connectors" [ref=e607] [cursor=pointer]:
+                - /url: https://claude.com/partners/mcp
+              - link "Customer stories" [ref=e608] [cursor=pointer]:
+                - /url: https://www.claude.com/customers
+              - link "Engineering blog" [ref=e609] [cursor=pointer]:
+                - /url: https://www.anthropic.com/engineering
+              - link "Events" [ref=e610] [cursor=pointer]:
+                - /url: https://www.anthropic.com/events
+              - link "Powered by Claude" [ref=e611] [cursor=pointer]:
+                - /url: https://claude.com/partners/powered-by-claude
+              - link "Service partners" [ref=e612] [cursor=pointer]:
+                - /url: https://claude.com/partners/services
+              - link "Startups program" [ref=e613] [cursor=pointer]:
+                - /url: https://claude.com/programs/startups
+            - generic [ref=e615]:
+              - paragraph [ref=e616]: Terms and policies
+              - link "Privacy choices" [ref=e617] [cursor=pointer]:
+                - /url: "#"
+              - link "Privacy policy" [ref=e618] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/privacy
+              - link "Disclosure policy" [ref=e619] [cursor=pointer]:
+                - /url: https://www.anthropic.com/responsible-disclosure-policy
+              - link "Usage policy" [ref=e620] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/aup
+              - link "Commercial terms" [ref=e621] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/commercial-terms
+              - link "Consumer terms" [ref=e622] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/consumer-terms
+  - alert [ref=e623]

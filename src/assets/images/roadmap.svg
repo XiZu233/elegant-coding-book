@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <style>
+    .bg { fill: #f9fafb; }
+    .timeline { stroke: #2563eb; stroke-width: 4; fill: none; }
+    .node-bg { fill: #ffffff; stroke: #2563eb; stroke-width: 2; }
+    .node-bg-alt { fill: #ffffff; stroke: #059669; stroke-width: 2; }
+    .node-num { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2563eb; }
+    .node-num-alt { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #059669; }
+    .node-title { font-family: Arial, sans-serif; font-size: 11px; fill: #1f2937; text-anchor: middle; }
+    .node-time { font-family: Arial, sans-serif; font-size: 10px; fill: #6b7280; text-anchor: middle; }
+    .total-time { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #1f2937; text-anchor: middle; }
+    .icon { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .icon-blue { stroke: #2563eb; }
+    .icon-green { stroke: #059669; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="1200" height="300" rx="12"/>
+
+  <!-- Timeline line -->
+  <line class="timeline" x1="80" y1="120" x2="1120" y2="120"/>
+
+  <!-- Node 00 -->
+  <rect class="node-bg" x="45" y="60" width="70" height="110" rx="10"/>
+  <circle cx="80" cy="85" r="14" fill="#dbeafe"/>
+  <path class="icon icon-blue" d="M74 85 L80 79 L86 85 M80 79 L80 91" transform="translate(0,0)"/>
+  <text class="node-num" x="80" y="115">00</text>
+  <text class="node-title" x="80" y="135">重新定义</text>
+  <text class="node-time" x="80" y="150">1-2h</text>
+
+  <!-- Node 01 -->
+  <rect class="node-bg" x="155" y="60" width="70" height="110" rx="10"/>
+  <circle cx="190" cy="85" r="14" fill="#dbeafe"/>
+  <path class="icon icon-blue" d="M184 85 L190 79 L196 85 M190 79 L190 91 M184 91 L196 91" transform="translate(0,0)"/>
+  <text class="node-num" x="190" y="115">01</text>
+  <text class="node-title" x="190" y="135">环境搭建</text>
+  <text class="node-time" x="190" y="150">2-3h</text>
+
+  <!-- Node 02 -->
+  <rect class="node-bg" x="265" y="60" width="70" height="110" rx="10"/>
+  <circle cx="300" cy="85" r="14" fill="#dbeafe"/>
+  <path class="icon icon-blue" d="M294 82 L306 82 M294 86 L306 86 M294 90 L306 90" transform="translate(0,0)"/>
+  <text class="node-num" x="300" y="115">02</text>
+  <text class="node-title" x="300" y="135">语法基础</text>
+  <text class="node-time" x="300" y="150">4-6h</text>
+
+  <!-- Node 03 -->
+  <rect class="node-bg" x="375" y="60" width="70" height="110" rx="10"/>
+  <circle cx="410" cy="85" r="14" fill="#dbeafe"/>
+  <path class="icon icon-blue" d="M404 88 C404 84 407 81 410 81 C413 81 416 84 416 88 C416 92 413 95 410 95 C407 95 404 92 404 88 Z M404 88 L401 91" transform="translate(0,0)"/>
+  <text class="node-num" x="410" y="115">03</text>
+  <text class="node-title" x="410" y="135">AI工具入门</text>
+  <text class="node-time" x="410" y="150">2-3h</text>
+
+  <!-- Node 04 -->
+  <rect class="node-bg-alt" x="485" y="60" width="70" height="110" rx="10"/>
+  <circle cx="520" cy="85" r="14" fill="#d1fae5"/>
+  <path class="icon icon-green" d="M514 82 L520 82 L520 88 L526 88 M514 91 L526 91" transform="translate(0,0)"/>
+  <text class="node-num-alt" x="520" y="115">04</text>
+  <text class="node-title" x="520" y="135">核心概念</text>
+  <text class="node-time" x="520" y="150">3-4h</text>
+
+  <!-- Node 05 -->
+  <rect class="node-bg-alt" x="595" y="60" width="70" height="110" rx="10"/>
+  <circle cx="630" cy="85" r="14" fill="#d1fae5"/>
+  <path class="icon icon-green" d="M624 82 L630 82 L630 88 L636 88 M624 91 L636 91" transform="translate(0,0)"/>
+  <text class="node-num-alt" x="630" y="115">05</text>
+  <text class="node-title" x="630" y="135">实战案例</text>
+  <text class="node-time" x="630" y="150">6-10h</text>
+
+  <!-- Node 06 -->
+  <rect class="node-bg" x="705" y="60" width="70" height="110" rx="10"/>
+  <circle cx="740" cy="85" r="14" fill="#dbeafe"/>
+  <path class="icon icon-blue" d="M734 85 L740 79 L746 85 M740 79 L740 91 M734 85 L746 85" transform="translate(0,0)"/>
+  <text class="node-num" x="740" y="115">06</text>
+  <text class="node-title" x="740" y="135">知识补充</text>
+  <text class="node-time" x="740" y="150">3-4h</text>
+
+  <!-- Node 07 -->
+  <rect class="node-bg" x="815" y="60" width="70" height="110" rx="10"/>
+  <circle cx="850" cy="85" r="14" fill="#dbeafe"/>
+  <path class="icon icon-blue" d="M844 85 L850 79 L856 85 M850 79 L850 91" transform="translate(0,0)"/>
+  <text class="node-num" x="850" y="115">07</text>
+  <text class="node-title" x="850" y="135">长期主义</text>
+  <text class="node-time" x="850" y="150">1-2h</text>
+
+  <!-- Timeline dots -->
+  <circle cx="80" cy="120" r="5" fill="#2563eb"/>
+  <circle cx="190" cy="120" r="5" fill="#2563eb"/>
+  <circle cx="300" cy="120" r="5" fill="#2563eb"/>
+  <circle cx="410" cy="120" r="5" fill="#2563eb"/>
+  <circle cx="520" cy="120" r="5" fill="#059669"/>
+  <circle cx="630" cy="120" r="5" fill="#059669"/>
+  <circle cx="740" cy="120" r="5" fill="#2563eb"/>
+  <circle cx="850" cy="120" r="5" fill="#2563eb"/>
+
+  <!-- Arrow heads -->
+  <polygon points="1120,115 1130,120 1120,125" fill="#2563eb"/>
+
+  <!-- Total time -->
+  <text class="total-time" x="600" y="230">预计总学习时间：2-4周</text>
+  <line x1="480" y1="245" x2="720" y2="245" stroke="#d1d5db" stroke-width="2"/>
+</svg>

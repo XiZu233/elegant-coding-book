@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520">
+  <style>
+    .bg { fill: #f9fafb; }
+    .box { fill: #ffffff; stroke: #2563eb; stroke-width: 2; }
+    .diamond { fill: #ffffff; stroke: #059669; stroke-width: 2; }
+    .diamond-text { font-family: Arial, sans-serif; font-size: 13px; fill: #1f2937; text-anchor: middle; }
+    .box-text { font-family: Arial, sans-serif; font-size: 14px; fill: #1f2937; text-anchor: middle; }
+    .arrow { stroke: #6b7280; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .arrow-green { stroke: #059669; stroke-width: 2; fill: none; marker-end: url(#arrowhead-green); }
+    .arrow-red { stroke: #dc2626; stroke-width: 2; fill: none; marker-end: url(#arrowhead-red); }
+    .label-yes { font-family: Arial, sans-serif; font-size: 12px; fill: #059669; font-weight: bold; }
+    .label-no { font-family: Arial, sans-serif; font-size: 12px; fill: #dc2626; font-weight: bold; }
+    .loop-label { font-family: Arial, sans-serif; font-size: 12px; fill: #6b7280; font-style: italic; }
+    .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1f2937; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#059669"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="700" height="520" rx="12"/>
+  <text class="title" x="350" y="35">调试的科学方法</text>
+
+  <!-- Step 1: Hypothesis -->
+  <rect class="box" x="225" y="55" width="250" height="60" rx="10"/>
+  <text class="box-text" x="350" y="80">假设</text>
+  <text class="box-text" x="350" y="100" style="font-size:12px; fill:#6b7280;">代码应该输出 X</text>
+
+  <!-- Arrow down -->
+  <line class="arrow" x1="350" y1="115" x2="350" y2="145"/>
+
+  <!-- Step 2: Verify -->
+  <rect class="box" x="225" y="150" width="250" height="60" rx="10"/>
+  <text class="box-text" x="350" y="175">验证</text>
+  <text class="box-text" x="350" y="195" style="font-size:12px; fill:#6b7280;">运行并观察</text>
+
+  <!-- Arrow down -->
+  <line class="arrow" x1="350" y1="210" x2="350" y2="240"/>
+
+  <!-- Decision Diamond -->
+  <polygon class="diamond" points="350,245 450,295 350,345 250,295"/>
+  <text class="diamond-text" x="350" y="292">结果符合</text>
+  <text class="diamond-text" x="350" y="308">预期？</text>
+
+  <!-- Yes branch -->
+  <line class="arrow-green" x1="450" y1="295" x2="520" y2="295"/>
+  <text class="label-yes" x="460" y="285">是</text>
+
+  <!-- Continue box -->
+  <rect class="box" x="525" y="265" width="120" height="60" rx="10" style="stroke:#059669;"/>
+  <text class="box-text" x="585" y="300" style="fill:#059669;">继续</text>
+
+  <!-- No branch -->
+  <line class="arrow-red" x1="350" y1="345" x2="350" y2="390"/>
+  <text class="label-no" x="360" y="375">否</text>
+
+  <!-- Fix hypothesis box -->
+  <rect class="box" x="225" y="395" width="250" height="60" rx="10" style="stroke:#dc2626;"/>
+  <text class="box-text" x="350" y="420">修正假设</text>
+  <text class="box-text" x="350" y="440" style="font-size:12px; fill:#6b7280;">分析原因，调整思路</text>
+
+  <!-- Loop back arrow -->
+  <path class="arrow-red" d="M225 425 L120 425 L120 85 L220 85" fill="none"/>
+  <text class="loop-label" x="140" y="415">回到起点</text>
+
+  <!-- Loop label on the right side -->
+  <text class="loop-label" x="580" y="420" style="font-size:14px; fill:#2563eb; font-weight:bold;">调试思维</text>
+  <path d="M520 380 Q580 350 580 400" stroke="#2563eb" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+</svg>

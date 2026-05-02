@@ -1,0 +1,538 @@
+# 02 编程语法和代码审美
+
+> 选择第一门语言：Python。理由很简单——表达力最强，AI训练数据最多。不要纠结"最好"的语言，先让电脑听你的话。
+
+---
+
+## 第一层：能跑（核心语法）
+
+> [配图占位：此处应有 Python 四要素思维导图，详见附录D]
+
+编程和做饭很像。你有一堆食材（数据），按照菜谱（代码）加工，最后端出一道菜（结果）。Python 的菜谱读起来像英语，是最适合入门的"方言"。
+
+打开你的电脑，找到 VS Code 或任何文本编辑器，新建一个文件叫 `hello.py`。我们正式开始。
+
+### 1.1 变量：给数据贴标签
+
+变量就是一个名字，用来记住某个数据。想象你在厨房，把"3个鸡蛋"放进一个标着 `eggs` 的篮子里，以后只要说 `eggs`，就知道是 3 个鸡蛋。
+
+```python
+# 给数据贴上名字标签
+name = "小明"          # 字符串：一串文字
+age = 25               # 整数：没有小数点的数字
+height = 1.75          # 浮点数：有小数点的数字
+is_student = True      # 布尔值：True（真）或 False（假）
+
+# 使用变量
+print(name)            # 输出：小明
+print(age + 1)         # 输出：26
+```
+
+**命名规则（必须遵守）**：
+- 只能包含字母、数字和下划线
+- 不能以数字开头（`2name` 不行，`name2` 可以）
+- 区分大小写（`Name` 和 `name` 是两个不同的变量）
+- 不能用 Python 的保留字（如 `if`、`for`、`class`）
+
+**好的命名习惯**：
+- `user_name` 比 `x` 好一百倍
+- `total_price` 比 `tp` 好一百倍
+- 看到名字就知道里面装的是什么
+
+**和 AI 一起练**：
+> 提示词模板："我是 Python 初学者，请给我出 5 道变量命名的练习题。要求：给出一段不好的命名代码，让我找出问题并改成好的命名。最后给出答案和解释。"
+
+---
+
+### 1.2 数据类型：Python 里的四种基础食材
+
+Python 最常用的数据类型有四种。你不需要死记硬背，用多了自然就熟悉。
+
+#### 字符串（str）：文字和句子
+
+用单引号或双引号包裹的文字。
+
+```python
+message = "你好，世界！"
+print(message)
+print(message.upper())      # 转成大写：你好，世界！（中文不变）
+print(len(message))         # 长度：6（6 个字符）
+
+# 字符串拼接
+first = "张"
+last = "三"
+full = first + last
+print(full)                 # 输出：张三
+```
+
+#### 数字（int / float）：整数和小数
+
+```python
+apples = 5          # 整数
+price = 3.5         # 浮点数
+
+# 四则运算
+total = apples * price
+print(total)        # 输出：17.5
+
+# 取整和取余
+print(17 // 5)      # 整除：3
+print(17 % 5)       # 取余：2
+```
+
+#### 列表（list）：排好队的一组数据
+
+用方括号 `[]` 包裹，可以装任意多个东西，顺序固定。
+
+```python
+fruits = ["苹果", "香蕉", "橙子"]
+
+print(fruits[0])        # 第一个：苹果（注意：索引从 0 开始！）
+print(fruits[1])        # 第二个：香蕉
+print(len(fruits))      # 长度：3
+
+# 常用操作
+fruits.append("葡萄")   # 末尾添加
+fruits.remove("香蕉")   # 删除指定项
+print(fruits)           # ['苹果', '橙子', '葡萄']
+```
+
+#### 字典（dict）：带标签的储物柜
+
+用花括号 `{}` 包裹，每个数据都有一个"钥匙"（key），用来快速查找。
+
+```python
+student = {
+    "name": "小明",
+    "age": 20,
+    "major": "计算机"
+}
+
+print(student["name"])      # 输出：小明
+student["age"] = 21         # 修改值
+student["city"] = "北京"    # 添加新项
+print(student)
+```
+
+**和 AI 一起练**：
+> 提示词模板："请用 Python 帮我写一个'个人通讯录'的小程序，使用字典存储联系人信息（姓名、电话、地址），并演示如何添加、查找和删除联系人。每行代码都加上中文注释。"
+
+---
+
+### 1.3 函数：把重复的操作打包
+
+> [配图占位：此处应有函数拆解乐高积木示意图，详见附录D]
+
+函数是一段"可复用的代码"。你写好一次，以后只要叫它的名字就能执行。
+
+**定义函数**：
+
+```python
+def greet(name):
+    """向某人问好"""
+    message = "你好，" + name + "！"
+    return message
+
+# 调用函数
+result = greet("小明")
+print(result)       # 输出：你好，小明！
+
+# 再调用一次，传入不同的参数
+print(greet("小红"))  # 输出：你好，小红！
+```
+
+**带多个参数的函数**：
+
+```python
+def calculate_area(width, height):
+    """计算矩形面积"""
+    area = width * height
+    return area
+
+# 调用
+result = calculate_area(5, 3)
+print(result)       # 输出：15
+```
+
+**关键点**：
+- `def` 是定义函数的关键词
+- 括号里是"参数"——函数需要的外部信息
+- `return` 是函数的"出口"，把结果交还给调用者
+- 函数内部的变量外面看不见（这叫"作用域"）
+
+**和 AI 一起练**：
+> 提示词模板："请给我出 3 道 Python 函数练习题。难度从简单到中等。每道题给出题目描述、期望的输入输出示例，以及参考答案。题目要贴近生活场景（比如计算快递费、判断成绩等级）。"
+
+---
+
+### 1.4 条件判断：让程序做选择
+
+程序需要根据情况做出不同反应。`if/else` 就是做选择的语法。
+
+```python
+score = 85
+
+if score >= 90:
+    grade = "优秀"
+elif score >= 80:
+    grade = "良好"
+elif score >= 60:
+    grade = "及格"
+else:
+    grade = "不及格"
+
+print(f"分数：{score}，等级：{grade}")   # 输出：分数：85，等级：良好
+```
+
+**实际例子：判断文件是否存在**：
+
+```python
+import os
+
+file_path = "data.txt"
+
+if os.path.exists(file_path):
+    print(f"文件 {file_path} 存在")
+    # 这里可以写读取文件的代码
+else:
+    print(f"文件 {file_path} 不存在，请检查路径")
+    # 这里可以写创建文件的代码
+```
+
+**比较运算符**：
+- `==` 等于
+- `!=` 不等于
+- `>` 大于，`<` 小于
+- `>=` 大于等于，`<=` 小于等于
+
+**逻辑运算符**：
+- `and`：两个条件都满足
+- `or`：至少一个满足
+- `not`：反过来
+
+```python
+age = 25
+has_id = True
+
+if age >= 18 and has_id:
+    print("可以进入")
+else:
+    print("不能进入")
+```
+
+**和 AI 一起练**：
+> 提示词模板："请帮我写一个 Python 程序：输入一个年份，判断它是不是闰年。要求用 if/else 实现，并给出 4 个测试用例（包括闰年和非闰年）。每行代码加中文注释。"
+
+---
+
+### 1.5 循环：让程序重复干活
+
+#### for 循环：遍历列表
+
+```python
+fruits = ["苹果", "香蕉", "橙子"]
+
+for fruit in fruits:
+    print(f"我喜欢吃{fruit}")
+
+# 输出：
+# 我喜欢吃苹果
+# 我喜欢吃香蕉
+# 我喜欢吃橙子
+```
+
+**用 range 生成数字序列**：
+
+```python
+for i in range(5):
+    print(i)
+
+# 输出：0, 1, 2, 3, 4
+
+# 从 1 数到 10
+for i in range(1, 11):
+    print(i)
+```
+
+#### while 循环：条件控制
+
+```python
+count = 0
+
+while count < 5:
+    print(f"当前计数：{count}")
+    count = count + 1   # 别忘了更新条件，否则会无限循环！
+
+print("循环结束")
+```
+
+**实际例子：猜数字游戏**：
+
+```python
+import random
+
+target = random.randint(1, 100)     # 随机生成 1-100 的数字
+guesses = 0
+
+while True:
+    guess = int(input("猜一个 1-100 之间的数字："))
+    guesses += 1
+
+    if guess == target:
+        print(f"恭喜！你猜对了！用了 {guesses} 次")
+        break                       # 猜对了，退出循环
+    elif guess < target:
+        print("太小了，再大一点")
+    else:
+        print("太大了，再小一点")
+```
+
+**和 AI 一起练**：
+> 提示词模板："请用 Python 写一个'九九乘法表'程序，用 for 循环实现，输出格式要整齐对齐。然后请解释 range() 函数的三种常见用法。"
+
+---
+
+## 第二层：好看（代码组织美学）
+
+代码能跑只是及格。好看的代码像一篇排版精美的文章，让人愿意读、容易懂。
+
+### 2.1 缩进：Python 的"隐形语法"
+
+> [配图占位：此处应有缩进对比示意图，详见附录D]
+
+Python 用缩进来表示代码的层级关系，这是它最特别的地方。
+
+```python
+def check_age(age):
+    if age >= 18:               # if 语句后面要缩进
+        print("已成年")          # 这行属于 if
+        return True             # 这也属于 if
+    else:                       # else 和 if 对齐
+        print("未成年")          # 这行属于 else
+        return False            # 这也属于 else
+
+# 错误的缩进会导致程序崩溃！
+```
+
+**规则**：
+- 统一用 4 个空格（不要用 Tab，也不要混用）
+- VS Code 可以设置"自动将 Tab 转空格"
+- 同级别的代码要对齐
+- 被包含的代码要缩进
+
+**为什么重要**：
+缩进不是"风格问题"，在 Python 里它是语法的一部分。缩进错了，程序直接报错。
+
+### 2.2 命名：给变量起个好名字
+
+Python 社区的标准是 `snake_case`：全部小写，单词之间用下划线连接。
+
+```python
+# 好的命名
+user_name = "张三"
+max_login_attempts = 3
+calculate_total_price = 5
+
+# 不好的命名
+UserName = "张三"       # Python 类才用大驼峰
+userName = "张三"       # 这是 Java 风格
+x = 3                   # 不知道是什么
+```
+
+**命名原则**：
+- 看到名字就知道用途
+- 动词开头命名函数：`get_data`、`save_file`、`validate_input`
+- 名词命名变量：`user_list`、`config_path`
+- 布尔值用 `is_` 或 `has_` 开头：`is_valid`、`has_permission`
+
+### 2.3 注释：什么时候写，写什么
+
+注释是给人类看的说明文字，Python 用 `#` 开头。
+
+**应该写的注释**：
+- 解释"为什么"这么写（而不是"做了什么"，代码本身会说话）
+- 复杂的业务逻辑
+- 临时性的 workaround（并标注 TODO）
+
+```python
+# 计算折扣后的价格
+# 规则：会员打 9 折，满 100 再打 95 折
+def calculate_price(original, is_member):
+    price = original
+    if is_member:
+        price *= 0.9
+    if original >= 100:
+        price *= 0.95
+    return round(price, 2)  # 保留两位小数
+
+# TODO: 等接口文档更新后，改用新的 API 地址
+API_URL = "https://old-api.example.com"
+```
+
+**不应该写的注释**：
+- `x = x + 1  # 把 x 加 1`（废话）
+- 过时的注释（比没有注释更害人）
+
+### 2.4 模块化：把大文件拆成小块
+
+当一个文件超过 200 行，就该考虑拆分了。
+
+**第一步：把相关功能放到函数里**：
+
+```python
+# 原来：所有代码堆在一起
+def main():
+    # 读取数据
+    with open("data.csv", "r") as f:
+        lines = f.readlines()
+
+    # 处理数据
+    results = []
+    for line in lines:
+        parts = line.strip().split(",")
+        results.append(parts)
+
+    # 保存结果
+    with open("output.txt", "w") as f:
+        for r in results:
+            f.write("|".join(r) + "\n")
+
+if __name__ == "__main__":
+    main()
+```
+
+**第二步：拆成多个文件**：
+
+```
+my_project/
+    main.py          # 程序入口
+    reader.py        # 读取模块
+    processor.py     # 处理模块
+    writer.py        # 写入模块
+```
+
+```python
+# reader.py
+def read_csv(path):
+    with open(path, "r") as f:
+        return [line.strip().split(",") for line in f]
+
+# main.py
+from reader import read_csv
+from processor import process_data
+from writer import write_output
+
+def main():
+    data = read_csv("data.csv")
+    results = process_data(data)
+    write_output(results, "output.txt")
+
+if __name__ == "__main__":
+    main()
+```
+
+`if __name__ == "__main__":` 这行是 Python 的惯用法，意思是"只有当这个文件被直接运行时，才执行 main() 函数"。
+
+---
+
+## 第三层：好维护（调试思维）
+
+写代码只占程序员时间的 30%，剩下的 70% 在阅读、理解和调试代码。调试是一种科学方法，可以学会。
+
+### 3.1 调试的科学方法：假设 → 验证 → 修正
+
+![调试流程图](assets/images/debug-flow.svg)
+
+遇到 bug 不要慌，按这个流程来：
+
+1. **观察现象**：程序输出了什么？报了什么错？和预期有什么不同？
+2. **提出假设**：猜测可能的原因（"是不是这里没赋值？""是不是顺序错了？"）
+3. **设计验证**：加一个 print，或者改一个条件，验证你的猜测
+4. **修正代码**：确认原因后，精准修改
+5. **回归测试**：修改后运行，确认问题已解决，且没有引入新问题
+
+### 3.2 从 print 到调试器
+
+#### print 调试法（永远有用）
+
+```python
+def calculate(a, b):
+    print(f"DEBUG: a={a}, b={b}")   # 看看输入对不对
+    result = a / b
+    print(f"DEBUG: result={result}") # 看看输出对不对
+    return result
+```
+
+优点：简单、随处可用。缺点：改完 bug 要删掉，代码变脏。
+
+#### VS Code 断点调试（进阶）
+
+1. 在代码行号左边点一下，出现红点（断点）
+2. 按 F5 启动调试
+3. 程序会在断点处暂停
+4. 左侧"变量"面板可以看到所有变量的当前值
+5. 按 F10 逐行执行，F11 进入函数内部
+6. 按 F5 继续运行到下一个断点
+
+学会用断点，调试效率提升十倍。
+
+### 3.3 如何阅读错误信息
+
+> [配图占位：此处应有错误信息解读示意图，详见附录D]
+
+Python 报错时输出的东西叫 **Stack Trace（堆栈跟踪）**，看起来吓人，其实结构很清晰。
+
+```
+Traceback (most recent call last):
+  File "example.py", line 8, in <module>
+    result = divide(10, 0)
+  File "example.py", line 4, in divide
+    return a / b
+ZeroDivisionError: division by zero
+```
+
+**阅读方法**：
+- 从下往上看
+- 最后一行是错误类型和描述：`ZeroDivisionError: division by zero`
+- 倒数第二行是出错的代码：`return a / b`
+- 再往上是调用链：谁调了这个函数
+
+**常见错误类型**：
+- `SyntaxError`：语法错误，检查拼写和冒号
+- `NameError`：变量名写错了，或者还没定义就用了
+- `TypeError`：数据类型不对，比如字符串和数字相加
+- `IndexError`：列表索引越界，访问了不存在的元素
+- `KeyError`：字典里找不到这个 key
+- `FileNotFoundError`：文件路径不对
+
+### 3.4 AI 时代这为什么更重要
+
+AI 写代码很快，但 AI 会犯错。它可能：
+- 用了一个已经废弃的 API
+- 逻辑上漏了一个边界条件
+- 生成的代码在你环境里跑不通
+
+如果你看不懂错误信息，就只能把报错贴给 AI，等它"猜"一个答案——这很慢，而且可能越修越错。
+
+**能独立阅读 Stack Trace，是你和"只会复制粘贴"的人之间的分水岭。**
+
+---
+
+## 为什么现在还要使用传统工具
+
+AI 编程助手很强大，但它不是魔法。它偶尔会"一本正经地胡说八道"——生成看起来合理但实际错误的代码。如果你完全依赖 AI，出了问题会束手无策。
+
+**看懂代码的能力是你的"验算能力"**。就像计算器很方便，但你得知道 12 × 12 应该是 144，才能发现计算器按错的时候。
+
+**基础设施知识决定你的上限**。AI 能帮你写函数，但它不会替你理解：
+- 为什么这个循环是 O(n²) 而那个是 O(n)
+- 什么时候该用列表，什么时候该用字典
+- 为什么文件读取后要关闭
+
+这些"底层直觉"只能通过亲手写代码、亲手调试来积累。AI 是加速器，不是替代品。
+
+**建议的学习比例**：
+- 70% 的时间：自己动手写、跑、改
+- 30% 的时间：用 AI 辅助生成和解释
+
+先让自己"会"，再让 AI"快"。

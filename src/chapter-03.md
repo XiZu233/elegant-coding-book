@@ -1,0 +1,479 @@
+# 03 AI编程工具入门
+
+> 从"你写代码，AI建议"到"你说需求，AI执行"——这是2024-2026年编程范式最本质的跃迁。
+
+---
+
+## 一、时间线：从IDE插件到Agent编程
+
+> [配图占位：此处应有 AI 工具发展时间线，详见附录D]
+
+AI编程工具的发展经历了三个阶段，就像汽车从"手动挡辅助"进化到"自动驾驶"。
+
+| 阶段 | 时间 | 代表产品 | 核心特征 |
+|------|------|----------|----------|
+| **IDE插件时代** | 2021-2023 | GitHub Copilot、TabNine | 代码补全、单行/多行建议，被动辅助 |
+| **聊天窗口时代** | 2023-2024 | Cursor Chat、VS Code Copilot Chat | 侧边栏对话，可解释代码、生成片段，但仍需手动复制粘贴 |
+| **Agent编程时代** | 2024-至今 | **Claude Code**、**Kimi Code**、Windsurf | 直接操作文件系统、执行终端命令、自主规划任务、全流程闭环 |
+
+**本质变化**：从"你写代码，AI建议"变成"你说需求，AI执行"。
+
+---
+
+## 二、三种形态对比：网页、桌面应用、CLI
+
+> [配图占位：此处应有三种 AI 工具形态对比图，详见附录D]
+
+AI编程工具有三种"长相"，适合不同的使用场景。
+
+| 维度 | 网页版 | 桌面应用 | CLI（命令行） |
+|------|--------|----------|---------------|
+| **代表产品** | ChatGPT、Claude网页、Kimi网页 | Cursor、Windsurf、VS Code + 插件 | **Claude Code**、**Kimi Code** |
+| **交互方式** | 浏览器输入框 | 编辑器内嵌AI面板 | 终端对话，直接操作文件 |
+| **文件操作** | 上传/下载文件 | 实时编辑当前项目文件 | **直接读写、创建、删除项目文件** |
+| **终端执行** | 不支持 | 有限支持 | **原生支持，可运行npm/python等命令** |
+| **上下文理解** | 单轮对话 | 当前打开文件 | **整个项目目录结构+所有文件** |
+| **适用场景** | 快速问答、文案生成 | 日常编码、实时补全 | **复杂任务自动化、项目级重构、批量操作** |
+| **学习曲线** | 极低 | 低 | 中（需熟悉终端） |
+
+**CLI的核心优势**：AI真正成为你的"终端搭档"——你描述需求，它直接改代码、跑测试、提交Git，全程无需离开命令行。
+
+可以把CLI想象成AI的"驾驶舱"：仪表盘（终端）上按钮很多，但一旦熟悉，你能以最精确的方式操控AI完成复杂任务。
+
+---
+
+## 三、第一次对话：小明的AI编程初体验
+
+让我们跟着零基础用户小明，完成他的第一次AI编程工具使用。
+
+### 场景设定
+
+小明刚学完Python基础，想做一个简单的计算器程序。他听说Claude Code可以直接在终端里和AI对话，决定试一试。
+
+---
+
+### 3.1 启动工具
+
+小明打开终端（Windows上是PowerShell，Mac上是Terminal），输入：
+
+```bash
+cd ~/projects
+claude
+```
+
+屏幕上出现了Claude Code的启动画面：
+
+```
+╭──────────────────────────────────────────╮
+│                                          │
+│   Claude Code                            │
+│   v2.1.0                                 │
+│                                          │
+╰──────────────────────────────────────────╯
+
+> 当前目录: /Users/xiaoming/projects
+> 已加载 0 个文件到上下文
+
+有什么可以帮你的吗？
+```
+
+小明注意到：
+- 终端底部有一个闪烁的光标，等着他输入
+- 当前目录显示的是他进入时的文件夹
+- "已加载0个文件"表示AI还没读取项目里的任何文件
+
+---
+
+### 3.2 第一条指令：Hello World
+
+小明先来个简单的，输入：
+
+```
+帮我写一个Python的Hello World程序
+```
+
+Claude Code回复：
+
+```
+我来帮你创建一个Hello World程序。
+
+我将创建文件 hello.py：
+
+```python
+print("Hello, World!")
+```
+
+✓ 已创建 hello.py
+
+要运行它吗？（输入 y 确认）
+```
+
+小明输入 `y`，终端显示：
+
+```
+$ python hello.py
+Hello, World!
+```
+
+**小明学到的**：AI不只是生成代码，它还会主动创建文件、询问是否执行。他不需要手动复制粘贴。
+
+---
+
+### 3.3 进阶：写一个计算器
+
+小明想试试更复杂的需求。他输入：
+
+```
+帮我写一个命令行计算器，支持加减乘除。用户输入两个数字和一个运算符，程序输出结果。
+```
+
+Claude Code思考了几秒，回复：
+
+```
+我来创建一个交互式计算器。
+
+```python
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "错误：不能除以零"
+    return a / b
+
+def main():
+    print("简单计算器")
+    print("支持运算: + - * /")
+    
+    try:
+        num1 = float(input("请输入第一个数字: "))
+        operator = input("请输入运算符 (+ - * /): ")
+        num2 = float(input("请输入第二个数字: "))
+        
+        if operator == "+":
+            result = add(num1, num2)
+        elif operator == "-":
+            result = subtract(num1, num2)
+        elif operator == "*":
+            result = multiply(num1, num2)
+        elif operator == "/":
+            result = divide(num1, num2)
+        else:
+            print("错误：不支持的运算符")
+            return
+        
+        print(f"结果: {result}")
+    except ValueError:
+        print("错误：请输入有效的数字")
+
+if __name__ == "__main__":
+    main()
+```
+
+✓ 已创建 calculator.py
+```
+
+---
+
+### 3.4 验证结果
+
+Claude Code问："要运行测试吗？"
+
+小明输入 `y`，然后跟着提示操作：
+
+```
+$ python calculator.py
+简单计算器
+支持运算: + - * /
+请输入第一个数字: 10
+请输入运算符 (+ - * /): *
+请输入第二个数字: 5
+结果: 50.0
+```
+
+小明又试了一次除法：
+
+```
+请输入第一个数字: 10
+请输入运算符 (+ - * /): /
+请输入第二个数字: 0
+结果: 错误：不能除以零
+```
+
+**小明学到的**：
+- AI生成的代码考虑了"除以零"的错误情况
+- 但小明想确认：如果输入的不是数字会怎样？
+- 他试了一下输入"abc"，程序提示"请输入有效的数字"
+
+---
+
+### 3.5 遇到问题：我想加新功能
+
+小明觉得计算器不错，但想加一个"幂运算"（比如2的3次方）。他直接说：
+
+```
+给计算器加上幂运算，用 ^ 符号
+```
+
+Claude Code回复：
+
+```
+我来为计算器添加幂运算功能。
+
+修改 calculator.py：
+
+```python
+def power(a, b):
+    return a ** b
+
+# ... 在 main() 函数中添加：
+        elif operator == "^":
+            result = power(num1, num2)
+```
+
+✓ 已更新 calculator.py
+```
+
+小明运行测试：
+
+```
+请输入第一个数字: 2
+请输入运算符 (+ - * / ^): ^
+请输入第二个数字: 3
+结果: 8.0
+```
+
+完美！小明没有手动改一行代码，AI直接帮他修改了文件。
+
+---
+
+### 3.6 小明的第一次总结
+
+小明在笔记本上记下：
+
+1. **启动**：在终端输入 `claude` 就进入对话模式
+2. **提需求**：用自然语言描述想做什么，越具体越好
+3. **AI执行**：AI会自动创建/修改文件，并询问是否执行命令
+4. **验证**：一定要自己运行测试，确认结果符合预期
+5. **迭代**：不满意就继续提需求，AI会基于当前文件继续修改
+
+**小明的困惑和解决**：
+- **困惑**：AI有时候生成的代码我看不懂怎么办？
+- **解决**：直接问AI"请解释这段代码的每一行"。Claude Code会逐行解释。
+
+---
+
+## 四、Claude Code 安装与配置
+
+### 4.1 安装（2026最新方案）
+
+Claude Code 2026年已无需Node.js依赖，采用原生安装：
+
+**macOS / Linux / WSL**：
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+**Windows（管理员PowerShell）**：
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+**验证安装**：
+```bash
+claude --version  # 应显示 v2.1.x 或更高
+```
+
+### 4.2 首次启动
+
+> [配图占位：此处应有 Claude Code 首次启动界面截图，详见附录D]
+
+```bash
+cd /你的项目路径
+claude  # 进入交互式会话
+```
+
+首次启动配置：
+- 选择颜色主题
+- 确认当前目录可信（选"是"）
+- 自动弹出授权页面登录 Claude 账号
+
+**跳过权限提示（开发常用）**：
+```bash
+claude --dangerously-skip-permissions  # 仅用于完全信任的目录
+```
+
+### 4.3 核心命令速查
+
+| 命令 | 作用 |
+|------|------|
+| `claude` | 启动会话 |
+| `claude --version` | 查看版本 |
+| `/config` | 打开配置面板 |
+| `/model` | 切换模型 |
+| `/permissions` | 管理权限白名单 |
+| `/theme` | 切换主题 |
+| `exit` 或 `quit` | 退出会话 |
+
+### 4.4 国内使用方案（可选阅读）
+
+Claude Code 是框架+模型的组合，框架本身开放，可接入支持 Anthropic 协议的模型。
+
+**方案：cc-switch 模型切换工具**
+
+> [配图占位：此处应有 cc-switch 界面截图，详见附录D]
+
+1. **安装 cc-switch**：
+   - macOS：`brew tap farion1231/ccswitch && brew install --cask cc-switch`
+   - Windows：GitHub Releases 下载安装包
+
+2. **配置国产模型**（如GLM-5.1、DeepSeek）：
+   - 打开 cc-switch → 点击"+" → 选择"自定义配置"
+   - 填写中转URL和API Key
+   - 启用配置
+
+3. **在Claude Code中切换模型**：
+   ```
+   /model  # 查看可用模型并切换
+   ```
+
+> 这部分是进阶内容，初学者可以先跳过，使用官方模型即可。
+
+---
+
+## 五、Kimi Code 快速开始
+
+### 5.1 安装
+
+Kimi Code 由月之暗面推出，与 Claude Code 架构类似。
+
+**安装方式**：
+```bash
+# 通过npm安装（如官方提供CLI包）
+npm install -g @moonshot-ai/kimi-code
+
+# 或通过官方脚本
+curl -fsSL https://code.kimi.com/install.sh | bash
+```
+
+### 5.2 配置Kimi API
+
+```bash
+# 设置环境变量
+export KIMI_API_KEY="sk-kimi-你的key"
+export KIMI_BASE_URL="https://api.moonshot.cn/v1"
+```
+
+### 5.3 Claude Code vs Kimi Code 对比
+
+| 维度 | Claude Code | Kimi Code |
+|------|-------------|-----------|
+| **出品方** | Anthropic | 月之暗面（Moonshot AI） |
+| **底层模型** | Claude Sonnet/Opus/Haiku | Kimi K2 / Kimi-VL |
+| **国内可用性** | 需中转/cc-switch | 直接可用（国内API） |
+| **代码能力** | 极强，Agent逻辑成熟 | 极强，长上下文优势明显（200K+） |
+| **中文支持** | 良好 | **原生优化，中文场景更强** |
+| **成本** | 较高（官方$20/月） | 按量付费，相对灵活 |
+| **推荐场景** | 复杂项目、英文环境 | 国内开发、中文项目、长文档处理 |
+
+---
+
+## 六、快速上手路线图
+
+不要试图一天学会所有功能。按这个节奏来：
+
+```
+Day 1: 安装与第一条指令
+  ├── 安装Claude Code CLI
+  ├── 配置API（官方或国内中转）
+  └── 尝试："分析当前目录结构，建议项目规范"
+
+Day 2: 核心能力体验
+  ├── 让AI创建一个新功能文件
+  ├── 让AI重构一段旧代码
+  └── 让AI写单元测试并运行
+
+Day 3: 项目实战
+  ├── 选择一个真实小项目（如待办清单）
+  ├── 全程用Claude Code开发
+  └── 体验"说需求，AI执行"的工作流
+
+Week 2: 进阶探索（可选）
+  ├── 安装cc-switch，尝试切换不同模型
+  ├── 配置MCP Server（连接外部工具）
+  ├── 创建第一个Skill（固化工作流）
+  └── 积累自己的CLAUDE.md模板库
+```
+
+---
+
+## 七、避坑指南
+
+| 问题 | 原因 | 解决 |
+|------|------|------|
+| `401 Unauthorized` | API Key错误或过期 | 检查Key格式，确认余额充足 |
+| `400 thinking type` 错误 | 第三方API不支持adaptive思考 | `claude_code_disable_adaptive_thinking: "1"` |
+| Windows提示"bash不是内部命令" | Git安装时未选"Use Git from command line" | 重装Git，勾选对应选项 |
+| 终端频繁断连 | 网关超时 | cc-switch中调高timeout到120秒 |
+| 环境变量设置后不生效 | 未重启终端 | Windows用`setx`，macOS/Linux `source ~/.zshrc` |
+| AI修改了不想改的文件 | 权限设置太宽松 | 启动时不加 `--dangerously-skip-permissions`，逐项确认 |
+
+---
+
+## 八、进阶内容（可选阅读）
+
+以下内容为进阶主题，初学者可以跳过，等熟悉基础操作后再回来阅读。
+
+### 8.1 CLAUDE.md：项目的"宪法"
+
+> [配图占位：此处应有 CLAUDE.md 作用示意图，详见附录D]
+
+在项目根目录创建 `CLAUDE.md`，定义编码规范、安全红线、沟通方式。后续章节会详细讲解如何编写。
+
+### 8.2 MCP扩展：连接外部工具
+
+MCP（Model Context Protocol）让AI能调用外部工具，如浏览器、数据库、文件搜索等。
+
+```bash
+# 连接Playwright浏览器自动化
+claude mcp add playwright npx @playwright/mcp@latest
+```
+
+### 8.3 Skills技能包：固化工作流
+
+在 `.claude/skills/` 下创建 `SKILL.md`，把重复的工作流程写成模板：
+
+```markdown
+---
+name: fix-issue
+description: 修复GitHub issue的标准流程
+---
+
+1. 用 `gh issue view` 获取issue详情
+2. 理解问题
+3. 搜索相关代码文件
+4. 实现修复
+5. 写测试验证
+```
+
+使用：`/fix-issue 1234`
+
+---
+
+## 九、一句话总结
+
+**Claude Code / Kimi Code 不是"更聪明的代码补全"，而是"能自主执行任务的编程Agent"。**
+
+从"你写代码"到"你说需求"，从"手动操作文件"到"AI直接改项目"，这是2024-2026年编程范式最本质的跃迁。CLI形态看似复古，实则是最高效的人机协作界面——因为终端本就是开发者最熟悉的操作环境，AI融入其中，自然无缝。
+
+**给初学者的建议**：
+1. 先学会基础语法（见第02章），再上手AI工具
+2. 永远验证AI生成的代码，不要盲信
+3. 从简单任务开始，逐步建立对AI能力的边界认知
+4. 把AI当作"超级助手"，而不是"替代品"

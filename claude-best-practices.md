@@ -1,0 +1,388 @@
+- generic [ref=e3]:
+  - link "跳转到内容" [ref=e4] [cursor=pointer]:
+    - /url: "#VPContent"
+  - banner:
+    - generic:
+      - generic:
+        - generic:
+          - link "Kimi Code 文档" [ref=e6] [cursor=pointer]:
+            - /url: /code/docs/
+            - generic [ref=e7]: Kimi Code 文档
+          - generic [ref=e8]:
+            - button "搜索" [ref=e11] [cursor=pointer]:
+              - generic [ref=e14]: 搜索
+              - generic [ref=e15]: Ctrl K
+            - button "extra navigation" [ref=e17] [cursor=pointer]
+  - button "页面导航" [ref=e22] [cursor=pointer]: 页面导航
+  - complementary [ref=e24]:
+    - navigation "Sidebar Navigation" [ref=e26]:
+      - generic [ref=e27]: Sidebar Navigation
+      - generic [ref=e29]:
+        - button "Kimi Code" [ref=e30]:
+          - heading "Kimi Code" [level=2] [ref=e32]
+        - generic [ref=e33]:
+          - link "产品概览" [ref=e37] [cursor=pointer]:
+            - /url: /code/docs/
+            - paragraph [ref=e38]: 产品概览
+          - link "常见问题" [ref=e42] [cursor=pointer]:
+            - /url: /code/docs/kimi-code/faq.html
+            - paragraph [ref=e43]: 常见问题
+      - generic [ref=e45]:
+        - button "Kimi Code CLI" [ref=e46]:
+          - heading "Kimi Code CLI" [level=2] [ref=e48]
+        - generic [ref=e49]:
+          - link "快速开始" [ref=e53] [cursor=pointer]:
+            - /url: /code/docs/kimi-code-cli/getting-started.html
+            - paragraph [ref=e54]: 快速开始
+          - link "核心操作" [ref=e58] [cursor=pointer]:
+            - /url: /code/docs/kimi-code-cli/core-operations.html
+            - paragraph [ref=e59]: 核心操作
+          - generic [ref=e60]:
+            - button "配置 toggle section" [ref=e61] [cursor=pointer]:
+              - heading "配置" [level=3] [ref=e63]
+              - button "toggle section" [ref=e64]
+            - generic [ref=e66]:
+              - link "配置文件" [ref=e70] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/configuration/configuration-files.html
+                - paragraph [ref=e71]: 配置文件
+              - link "环境变量" [ref=e75] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/configuration/environment-variables.html
+                - paragraph [ref=e76]: 环境变量
+              - link "平台与模型" [ref=e80] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/configuration/providers-and-models.html
+                - paragraph [ref=e81]: 平台与模型
+              - link "数据路径" [ref=e85] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/configuration/data-locations.html
+                - paragraph [ref=e86]: 数据路径
+              - link "配置覆盖" [ref=e90] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/configuration/overrides-and-precedence.html
+                - paragraph [ref=e91]: 配置覆盖
+          - generic [ref=e92]:
+            - button "定制化 toggle section" [ref=e93] [cursor=pointer]:
+              - heading "定制化" [level=3] [ref=e95]
+              - button "toggle section" [ref=e96]
+            - generic [ref=e98]:
+              - link "官方插件 NEW" [ref=e102] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/customization/official%20plugins.html
+                - paragraph [ref=e103]: 官方插件 NEW
+              - link "MCP" [ref=e107] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/customization/mcp.html
+                - paragraph [ref=e108]: MCP
+              - link "Hooks (Beta)" [ref=e112] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/customization/hooks.html
+                - paragraph [ref=e113]: Hooks (Beta)
+              - link "Skills" [ref=e117] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/customization/skills.html
+                - paragraph [ref=e118]: Skills
+              - link "自定义插件 (Beta)" [ref=e122] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/customization/plugins.html
+                - paragraph [ref=e123]: 自定义插件 (Beta)
+              - link "Agent 与子 Agent" [ref=e127] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/customization/sub-agents.html
+                - paragraph [ref=e128]: Agent 与子 Agent
+              - link "Wire 协议" [ref=e132] [cursor=pointer]:
+                - /url: /code/docs/kimi-code-cli/customization/wire-protocol.html
+                - paragraph [ref=e133]: Wire 协议
+          - button "参考手册 toggle section" [ref=e135] [cursor=pointer]:
+            - heading "参考手册" [level=3] [ref=e137]
+            - button "toggle section" [ref=e138]
+      - generic [ref=e141]:
+        - button "Kimi Code for VS Code" [ref=e142]:
+          - heading "Kimi Code for VS Code" [level=2] [ref=e144]
+        - generic [ref=e145]:
+          - link "快速开始" [ref=e149] [cursor=pointer]:
+            - /url: /code/docs/kimi-code-for-vscode/getting-started.html
+            - paragraph [ref=e150]: 快速开始
+          - link "核心操作" [ref=e154] [cursor=pointer]:
+            - /url: /code/docs/kimi-code-for-vscode/core-operations.html
+            - paragraph [ref=e155]: 核心操作
+          - link "配置" [ref=e159] [cursor=pointer]:
+            - /url: /code/docs/kimi-code-for-vscode/configuration.html
+            - paragraph [ref=e160]: 配置
+          - link "定制化" [ref=e164] [cursor=pointer]:
+            - /url: /code/docs/kimi-code-for-vscode/customization.html
+            - paragraph [ref=e165]: 定制化
+      - generic [ref=e167]:
+        - button "在第三方工具中使用" [ref=e168]:
+          - heading "在第三方工具中使用" [level=2] [ref=e170]
+        - generic [ref=e171]:
+          - link "JetBrains" [ref=e175] [cursor=pointer]:
+            - /url: /code/docs/third-party-tools/jetbrains.html
+            - paragraph [ref=e176]: JetBrains
+          - link "Zed" [ref=e180] [cursor=pointer]:
+            - /url: /code/docs/third-party-tools/zed.html
+            - paragraph [ref=e181]: Zed
+          - link "Zsh" [ref=e185] [cursor=pointer]:
+            - /url: /code/docs/third-party-tools/zsh.html
+            - paragraph [ref=e186]: Zsh
+          - link "在第三方 Coding Agent 中使用" [ref=e190] [cursor=pointer]:
+            - /url: /code/docs/third-party-tools/other-coding-agents.html
+            - paragraph [ref=e191]: 在第三方 Coding Agent 中使用
+  - generic [ref=e196]:
+    - main [ref=e197]:
+      - generic [ref=e199]:
+        - heading "Kimi Code 概览 Permalink to “Kimi Code 概览”" [level=1] [ref=e200]:
+          - text: Kimi Code 概览
+          - link "Permalink to “Kimi Code 概览”" [ref=e201] [cursor=pointer]:
+            - /url: "#kimi-code-概览"
+            - text: "#"
+        - heading "Kimi Code 是什么 Permalink to “Kimi Code 是什么”" [level=2] [ref=e202]:
+          - text: Kimi Code 是什么
+          - link "Permalink to “Kimi Code 是什么”" [ref=e203] [cursor=pointer]:
+            - /url: "#kimi-code-是什么"
+            - text: "#"
+        - paragraph [ref=e204]:
+          - text: Kimi Code 是
+          - link "Kimi 会员权益" [ref=e205] [cursor=pointer]:
+            - /url: https://www.kimi.com/membership/pricing?from=kfc_docs_overview
+          - text: 中专为开发者提供的智能编程服务，基于 Kimi 最新旗舰模型，通过 CLI、VS Code 扩展插件等产品形态，为开发者提供代码阅读、文件编辑、命令执行等 AI 辅助能力。同时，订阅用户可获取 API Key，将 Kimi Code 的模型能力接入到第三方开发工具与平台。
+        - heading "核心优势 Permalink to “核心优势”" [level=2] [ref=e206]:
+          - text: 核心优势
+          - link "Permalink to “核心优势”" [ref=e207] [cursor=pointer]:
+            - /url: "#核心优势"
+            - text: "#"
+        - list [ref=e208]:
+          - listitem [ref=e209]:
+            - strong [ref=e210]: 底层模型持续升级
+            - text: ：紧跟 Kimi 最新旗舰模型，持续获得前沿代码理解、推理与生成能力
+          - listitem [ref=e211]:
+            - strong [ref=e212]: 广泛兼容
+            - text: ：完美适配 Kimi Code CLI、VS Code、Claude Code 等各类开发工具
+          - listitem [ref=e213]:
+            - strong [ref=e214]: 极速响应
+            - text: ：最高输出速度可达 100 Tokens/s
+          - listitem [ref=e215]:
+            - strong [ref=e216]: 高频并发
+            - text: ：每 5 小时支持约 300–1200 次请求，最高并发 30
+        - heading "开始使用 Permalink to “开始使用”" [level=2] [ref=e217]:
+          - text: 开始使用
+          - link "Permalink to “开始使用”" [ref=e218] [cursor=pointer]:
+            - /url: "#开始使用"
+            - text: "#"
+        - paragraph [ref=e219]: Kimi Code 支持会员在官方客户端和第三方平台使用权益，覆盖不同的开发场景。
+        - heading "使用官方客户端 Permalink to “使用官方客户端”" [level=3] [ref=e220]:
+          - text: 使用官方客户端
+          - link "Permalink to “使用官方客户端”" [ref=e221] [cursor=pointer]:
+            - /url: "#使用官方客户端"
+            - text: "#"
+        - paragraph [ref=e222]: 选择适合你的客户端，一键安装：
+        - heading "Kimi Code CLI Permalink to “Kimi Code CLI”" [level=4] [ref=e223]:
+          - text: Kimi Code CLI
+          - link "Permalink to “Kimi Code CLI”" [ref=e224] [cursor=pointer]:
+            - /url: "#kimi-code-cli"
+            - text: "#"
+        - paragraph [ref=e225]: 适合习惯终端操作的开发者。在终端中与 AI 对话，让它阅读代码、编辑文件、执行命令、搜索网页，自主完成开发任务。
+        - generic [ref=e226]:
+          - button "Copy Code" [ref=e227] [cursor=pointer]
+          - generic [ref=e228]: bash
+          - code [ref=e230]:
+            - generic [ref=e231]: "# macOS / Linux"
+            - generic [ref=e232]: curl -LsSf https://code.kimi.com/install.sh | bash
+        - generic [ref=e233]:
+          - button "Copy Code" [ref=e234] [cursor=pointer]
+          - generic [ref=e235]: powershell
+          - code [ref=e237]:
+            - generic [ref=e238]: "# Windows (PowerShell)"
+            - generic [ref=e239]: Invoke-RestMethod https://code.kimi.com/install.ps1 | Invoke-Expression
+        - paragraph [ref=e240]:
+          - text: 安装完成后，在终端中运行
+          - code [ref=e241]: kimi
+          - text: 即可启动。
+        - heading "Kimi Code for VS Code Permalink to “Kimi Code for VS Code”" [level=4] [ref=e242]:
+          - text: Kimi Code for VS Code
+          - link "Permalink to “Kimi Code for VS Code”" [ref=e243] [cursor=pointer]:
+            - /url: "#kimi-code-for-vs-code"
+            - text: "#"
+        - paragraph [ref=e244]: 适合偏好使用 VS Code 编辑器的开发者。在编辑器侧边栏与 AI 协同，支持代码补全、文件编辑、网页搜索和自动化任务。
+        - paragraph [ref=e245]:
+          - text: 在 VS Code 扩展市场搜索 "Kimi Code" 安装，或访问
+          - link "Visual Studio Marketplace" [ref=e246] [cursor=pointer]:
+            - /url: vscode:extension/moonshot-ai.kimi-code
+          - text: 。
+        - blockquote [ref=e247]:
+          - paragraph [ref=e248]: "若安装后未显示扩展，请重启 VS Code 或在命令面板中执行 \"Developer: Reload Window\" (Mac: Cmd+Shift+P, Windows/Linux: Ctrl+Shift+P)。"
+        - paragraph [ref=e249]:
+          - text: 其他编辑器如 JetBrains、Zed 可通过 CLI 的 ACP 协议接入使用，详见
+          - link "JetBrains 配置" [ref=e250] [cursor=pointer]:
+            - /url: /code/docs/third-party-tools/jetbrains.html
+          - text: 和
+          - link "Zed 配置" [ref=e251] [cursor=pointer]:
+            - /url: /code/docs/third-party-tools/zed.html
+          - text: 。
+        - heading "API 接入 Permalink to “API 接入”" [level=3] [ref=e252]:
+          - text: API 接入
+          - link "Permalink to “API 接入”" [ref=e253] [cursor=pointer]:
+            - /url: "#api-接入"
+            - text: "#"
+        - paragraph [ref=e254]: 安装官方客户端或接入第三方工具后，需要完成认证才能使用 Kimi Code 额度。
+        - heading "OAuth 自动认证（官方客户端） Permalink to “OAuth 自动认证（官方客户端）”" [level=4] [ref=e255]:
+          - text: OAuth 自动认证（官方客户端）
+          - link "Permalink to “OAuth 自动认证（官方客户端）”" [ref=e256] [cursor=pointer]:
+            - /url: "#oauth-自动认证-官方客户端"
+            - text: "#"
+        - paragraph [ref=e257]: 使用 Kimi Code CLI 或 VS Code 扩展的用户，可通过 OAuth 授权自动接入，无需手动管理 API Key。
+        - paragraph [ref=e258]:
+          - strong [ref=e259]: Kimi Code
+          - text: ：通过
+          - code [ref=e260]: /login
+          - text: 命令自动登入 Kimi Code 平台，即完成接入
+        - paragraph [ref=e261]:
+          - strong [ref=e262]: Kimi Code for VS Code 插件
+          - text: ：安装后通过侧边栏登录按钮完成接入
+        - heading "API Key（第三方工具 / 自建应用） Permalink to “API Key（第三方工具 / 自建应用）”" [level=4] [ref=e263]:
+          - text: API Key（第三方工具 / 自建应用）
+          - link "Permalink to “API Key（第三方工具 / 自建应用）”" [ref=e264] [cursor=pointer]:
+            - /url: "#api-key-第三方工具-自建应用"
+            - text: "#"
+        - paragraph [ref=e265]: Kimi Code 权益支持在主流 Coding Agent 中使用——例如 Claude Code、Roo Code、OpenCode 等；也可以配合 OpenClaw、Hermes 等通用 Agent 框架。让你在自己习惯的工具里自由调用 Kimi 的 AI 能力。
+        - paragraph [ref=e266]: 如果你要将 Kimi Code 接入第三方开发工具，需要手动配置 API Key。
+        - heading "服务地址 Permalink to “服务地址”" [level=4] [ref=e267]:
+          - text: 服务地址
+          - link "Permalink to “服务地址”" [ref=e268] [cursor=pointer]:
+            - /url: "#服务地址"
+            - text: "#"
+        - paragraph [ref=e269]: Kimi Code API 同时兼容 OpenAI 和 Anthropic 两种协议，按需选择对应的 Base URL：
+        - table [ref=e270]:
+          - rowgroup [ref=e271]:
+            - row "协议 Base URL" [ref=e272]:
+              - columnheader "协议" [ref=e273]
+              - columnheader "Base URL" [ref=e274]
+          - rowgroup [ref=e275]:
+            - row "OpenAI 兼容 https://api.kimi.com/coding/v1" [ref=e276]:
+              - cell "OpenAI 兼容" [ref=e277]
+              - cell "https://api.kimi.com/coding/v1" [ref=e278]:
+                - code [ref=e279]: https://api.kimi.com/coding/v1
+            - row "Anthropic 兼容 https://api.kimi.com/coding/" [ref=e280]:
+              - cell "Anthropic 兼容" [ref=e281]
+              - cell "https://api.kimi.com/coding/" [ref=e282]:
+                - code [ref=e283]: https://api.kimi.com/coding/
+        - heading "获取 API Key Permalink to “获取 API Key”" [level=4] [ref=e284]:
+          - text: 获取 API Key
+          - link "Permalink to “获取 API Key”" [ref=e285] [cursor=pointer]:
+            - /url: "#获取-api-key"
+            - text: "#"
+        - paragraph [ref=e286]:
+          - text: Kimi 会员可在
+          - link "Kimi Code 控制台" [ref=e287] [cursor=pointer]:
+            - /url: https://www.kimi.com/code/console
+          - text: 创建和管理（最多 5 个，仅创建时显示一次，请妥善保存）。
+        - heading "模型 ID Permalink to “模型 ID”" [level=4] [ref=e288]:
+          - text: 模型 ID
+          - link "Permalink to “模型 ID”" [ref=e289] [cursor=pointer]:
+            - /url: "#模型-id"
+            - text: "#"
+        - paragraph [ref=e290]:
+          - text: 在第三方工具中调用 Kimi Code API 时，请统一使用模型 ID
+          - code [ref=e291]: kimi-for-coding
+          - text: 。无论是 OpenAI 兼容协议还是 Anthropic 兼容协议，请求体里的
+          - code [ref=e292]: model
+          - text: 字段都填这个值。
+        - blockquote [ref=e293]:
+          - paragraph [ref=e294]:
+            - strong [ref=e295]: 说明
+            - text: ：
+            - code [ref=e296]: kimi-for-coding
+            - text: 是固定的模型 ID，后端会根据最新发布的模型自动更新其对应的 display name，你无需变更客户端配置即可享受模型升级。
+        - heading "配置到第三方工具 Permalink to “配置到第三方工具”" [level=4] [ref=e297]:
+          - text: 配置到第三方工具
+          - link "Permalink to “配置到第三方工具”" [ref=e298] [cursor=pointer]:
+            - /url: "#配置到第三方工具"
+            - text: "#"
+        - paragraph [ref=e299]:
+          - text: 获取 API Key 后，将对应 Base URL 和 API Key 配置到对应工具的环境变量即可使用。配置详情见
+          - link "在其他 coding agent 中使用" [ref=e300] [cursor=pointer]:
+            - /url: /code/docs/third-party-tools/other-coding-agents.html
+          - text: 。
+        - blockquote [ref=e301]:
+          - paragraph [ref=e302]:
+            - strong [ref=e303]: 注意
+            - text: ：使用时请保持工具的真实身份标识，篡改客户端标识（User-Agent）将被视为违规，可能导致会员权益暂停。
+        - heading "平台对比 Permalink to “平台对比”" [level=2] [ref=e304]:
+          - text: 平台对比
+          - link "Permalink to “平台对比”" [ref=e305] [cursor=pointer]:
+            - /url: "#平台对比"
+            - text: "#"
+        - paragraph [ref=e306]:
+          - text: Kimi Code 会员权益专为编程场景设计。如需在自己的产品中调用大模型能力，或需要团队协作与用量管理，请访问
+          - link "Kimi 开放平台" [ref=e307] [cursor=pointer]:
+            - /url: https://platform.kimi.com
+          - text: 。
+        - table [ref=e308]:
+          - rowgroup [ref=e309]:
+            - row "对比项 Kimi Code 平台 Kimi 开放平台" [ref=e310]:
+              - columnheader "对比项" [ref=e311]
+              - columnheader "Kimi Code 平台" [ref=e312]
+              - columnheader "Kimi 开放平台" [ref=e313]
+          - rowgroup [ref=e314]:
+            - row "Base URL Open AI 兼容： https://api.kimi.com/coding/v1 Anthropic 兼容：https://api.kimi.com/coding/ https://api.moonshot.cn/v1" [ref=e315]:
+              - cell "Base URL" [ref=e316]
+              - cell "Open AI 兼容： https://api.kimi.com/coding/v1 Anthropic 兼容：https://api.kimi.com/coding/" [ref=e317]:
+                - text: Open AI 兼容：
+                - code [ref=e318]: https://api.kimi.com/coding/v1
+                - text: Anthropic 兼容：
+                - code [ref=e319]: https://api.kimi.com/coding/
+              - cell "https://api.moonshot.cn/v1" [ref=e320]:
+                - code [ref=e321]: https://api.moonshot.cn/v1
+            - row "计费方式 会员订阅，按月/年付费，有频控限制 按量付费，充值即用" [ref=e322]:
+              - cell "计费方式" [ref=e323]
+              - cell "会员订阅，按月/年付费，有频控限制" [ref=e324]
+              - cell "按量付费，充值即用" [ref=e325]
+            - row "最佳场景 终端/IDE Agent 编程、多文件工程任务 产品集成、企业级调用、多模态应用开发" [ref=e326]:
+              - cell "最佳场景" [ref=e327]
+              - cell "终端/IDE Agent 编程、多文件工程任务" [ref=e328]
+              - cell "产品集成、企业级调用、多模态应用开发" [ref=e329]
+        - heading "额度与限制 Permalink to “额度与限制”" [level=2] [ref=e330]:
+          - text: 额度与限制
+          - link "Permalink to “额度与限制”" [ref=e331] [cursor=pointer]:
+            - /url: "#额度与限制"
+            - text: "#"
+        - paragraph [ref=e332]:
+          - text: Kimi Code 的额度以订阅日为起点
+          - strong [ref=e333]: 每 7 天自动刷新
+          - text: ，未用完不累积。除了周额度外，还有
+          - strong [ref=e334]: 每 5 小时的滚动频率窗口
+          - text: ——即使总量充足，短时间请求过多也会触发限流，等窗口滚动后自动恢复。
+        - paragraph [ref=e335]:
+          - text: 所有登录设备和 API Key 共享同一套配额：无论从 CLI、VS Code 还是第三方工具发起请求，消耗的都是同一个账户的额度。超过 30 天未活跃的设备会被自动解绑，重新
+          - code [ref=e336]: /login
+          - text: 即可恢复。
+        - paragraph [ref=e337]:
+          - text: 登录
+          - link "Kimi Code 控制台" [ref=e338] [cursor=pointer]:
+            - /url: https://www.kimi.com/code/console
+          - text: 可随时查看剩余额度与频限状态、管理 API Key 和登录设备。
+        - blockquote [ref=e339]:
+          - paragraph [ref=e340]:
+            - text: Kimi Code 与 Kimi 会员计划共享额度，如 Kimi 会员的月总额度达到上限，Kimi Code 额度会变为冻结状态，需等待月额度重置或升级订阅，月额度消耗可在 Kimi 主页设置中的
+            - link "订阅" [ref=e341] [cursor=pointer]:
+              - /url: https://www.kimi.com/membership/subscription
+            - text: 查看。
+        - heading "下一步 Permalink to “下一步”" [level=2] [ref=e342]:
+          - text: 下一步
+          - link "Permalink to “下一步”" [ref=e343] [cursor=pointer]:
+            - /url: "#下一步"
+            - text: "#"
+        - list [ref=e344]:
+          - listitem [ref=e345]:
+            - link "Kimi Code CLI 快速开始" [ref=e346] [cursor=pointer]:
+              - /url: /code/docs/kimi-code-cli/getting-started.html
+            - text: – 安装、登录、第一次对话
+          - listitem [ref=e347]:
+            - link "Kimi Code for VS Code 快速开始" [ref=e348] [cursor=pointer]:
+              - /url: /code/docs/kimi-code-for-vscode/getting-started.html
+            - text: – 安装扩展、登录、典型工作流
+          - listitem [ref=e349]:
+            - link "在更多第三方工具中使用" [ref=e350] [cursor=pointer]:
+              - /url: /code/docs/third-party-tools/other-coding-agents.html
+            - text: – Claude Code、Roo Code 等
+          - listitem [ref=e351]:
+            - link "常见问题" [ref=e352] [cursor=pointer]:
+              - /url: /code/docs/kimi-code/faq.html
+            - text: – 安装、登录、使用中的常见问题
+    - contentinfo [ref=e353]:
+      - navigation "Pager" [ref=e354]:
+        - generic [ref=e355]: Pager
+        - link "下一篇 常见问题" [ref=e358] [cursor=pointer]:
+          - /url: /code/docs/kimi-code/faq.html
+          - generic [ref=e359]: 下一篇
+          - generic [ref=e360]: 常见问题
