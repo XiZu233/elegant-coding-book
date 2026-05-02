@@ -3,7 +3,6 @@ title = "AI时代的优雅编程"
 authors = ["给零基础小白准备的AI时代优雅编程"]
 description = "零基础读者通过与AI协作学习Python编程，掌握描述需求、生成代码、运行验证、迭代优化的完整工作流"
 language = "zh"
-multilingual = false
 src = "src"
 
 [build]
