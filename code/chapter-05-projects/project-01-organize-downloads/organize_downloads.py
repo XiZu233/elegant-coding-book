@@ -18,7 +18,18 @@ def organize_downloads(downloads_path, dry_run=False):
     # 定义分类规则：文件夹名称 -> 对应的文件扩展名列表
     categories = {
         "图片": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".svg", ".ico"],
-        "文档": [".pdf", ".doc", ".docx", ".txt", ".xls", ".xlsx", ".ppt", ".pptx", ".csv", ".md"],
+        "文档": [
+            ".pdf",
+            ".doc",
+            ".docx",
+            ".txt",
+            ".xls",
+            ".xlsx",
+            ".ppt",
+            ".pptx",
+            ".csv",
+            ".md",
+        ],
         "压缩包": [".zip", ".rar", ".7z", ".tar", ".gz", ".bz2"],
     }
 

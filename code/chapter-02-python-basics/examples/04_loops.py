@@ -39,7 +39,7 @@ def demo_while_loop():
     count = 0
     while count < 5:
         print(f"当前计数：{count}")
-        count = count + 1   # 别忘了更新条件，否则会无限循环！
+        count = count + 1  # 别忘了更新条件，否则会无限循环！
 
     print("循环结束")
 
@@ -49,7 +49,7 @@ def demo_multiplication_table():
     print("\n=== 九九乘法表 ===")
     for i in range(1, 10):
         for j in range(1, i + 1):
-            print(f"{j}x{i}={i*j:2d}", end="  ")
+            print(f"{j}x{i}={i * j:2d}", end="  ")
         print()
 
 
@@ -58,7 +58,7 @@ def demo_guess_number():
     import random
 
     print("\n=== 猜数字游戏演示 ===")
-    target = random.randint(1, 100)     # 随机生成 1-100 的数字
+    target = random.randint(1, 100)  # 随机生成 1-100 的数字
 
     # 模拟几次猜测（实际游戏中用 input() 获取用户输入）
     guesses = [50, 75, 60, 65, target]
@@ -66,7 +66,7 @@ def demo_guess_number():
     for guess in guesses:
         if guess == target:
             print(f"恭喜！你猜对了！数字是 {target}")
-            break                       # 猜对了，退出循环
+            break  # 猜对了，退出循环
         elif guess < target:
             print(f"猜测 {guess}: 太小了，再大一点")
         else:

@@ -5,11 +5,7 @@
 
 def demo_create_and_access():
     """创建字典和访问元素"""
-    student = {
-        "name": "小明",
-        "age": 20,
-        "major": "计算机"
-    }
+    student = {"name": "小明", "age": 20, "major": "计算机"}
 
     print("=== 创建和访问字典 ===")
     print(f"学生信息: {student}")
@@ -22,11 +18,7 @@ def demo_create_and_access():
 
 def demo_modify_dict():
     """修改字典内容"""
-    student = {
-        "name": "小明",
-        "age": 20,
-        "major": "计算机"
-    }
+    student = {"name": "小明", "age": 20, "major": "计算机"}
 
     print("\n=== 修改字典 ===")
     print(f"原字典: {student}")
@@ -46,11 +38,7 @@ def demo_modify_dict():
 
 def demo_dict_methods():
     """字典常用方法"""
-    scores = {
-        "数学": 90,
-        "语文": 85,
-        "英语": 88
-    }
+    scores = {"数学": 90, "语文": 85, "英语": 88}
 
     print("\n=== 字典方法 ===")
     print(f"所有键: {list(scores.keys())}")

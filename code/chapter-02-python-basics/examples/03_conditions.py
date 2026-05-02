@@ -25,12 +25,12 @@ def demo_comparison_operators():
     a, b = 10, 20
 
     print(f"a = {a}, b = {b}")
-    print(f"a == b: {a == b}")   # 等于
-    print(f"a != b: {a != b}")   # 不等于
-    print(f"a > b:  {a > b}")    # 大于
-    print(f"a < b:  {a < b}")    # 小于
-    print(f"a >= b: {a >= b}")   # 大于等于
-    print(f"a <= b: {a <= b}")   # 小于等于
+    print(f"a == b: {a == b}")  # 等于
+    print(f"a != b: {a != b}")  # 不等于
+    print(f"a > b:  {a > b}")  # 大于
+    print(f"a < b:  {a < b}")  # 小于
+    print(f"a >= b: {a >= b}")  # 大于等于
+    print(f"a <= b: {a <= b}")  # 小于等于
 
 
 def demo_logical_operators():

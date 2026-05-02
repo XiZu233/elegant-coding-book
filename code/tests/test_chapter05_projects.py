@@ -16,7 +16,9 @@ ORGANIZE_DIR = PROJECTS_DIR / "project-01-organize-downloads"
 RENAME_DIR = PROJECTS_DIR / "project-02-rename-photos"
 
 
-def _run_test_script(test_script: Path, input_data: str = "") -> subprocess.CompletedProcess:
+def _run_test_script(
+    test_script: Path, input_data: str = ""
+) -> subprocess.CompletedProcess:
     """辅助函数：运行测试脚本，处理编码问题"""
     env = os.environ.copy()
     env["PYTHONIOENCODING"] = "utf-8"

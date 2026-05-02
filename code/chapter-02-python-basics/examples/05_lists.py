@@ -9,7 +9,7 @@ def demo_create_and_access():
 
     print("=== 创建和访问列表 ===")
     print(f"水果列表: {fruits}")
-    print(f"第一个元素: {fruits[0]}")     # 注意：索引从 0 开始！
+    print(f"第一个元素: {fruits[0]}")  # 注意：索引从 0 开始！
     print(f"第二个元素: {fruits[1]}")
     print(f"最后一个元素: {fruits[-1]}")  # -1 表示最后一个
     print(f"列表长度: {len(fruits)}")
@@ -56,7 +56,7 @@ def demo_list_comprehension():
     print("\n=== 列表推导式 ===")
 
     # 生成 0-9 的平方数列表
-    squares = [x ** 2 for x in range(10)]
+    squares = [x**2 for x in range(10)]
     print(f"0-9 的平方: {squares}")
 
     # 只保留偶数
