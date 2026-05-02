@@ -14,10 +14,8 @@
 - [附录A 进阶实战案例](appendix-a.md)
 - [附录B 常见错误与调试](appendix-b.md)
 - [附录C 学习目标与自检清单](appendix-c.md)
-- [附录D 配图位置标注](appendix-d.md)
-- [附录E 配套GitHub仓库设计](appendix-e.md)
-- [附录F 参考文档调研报告](appendix-f.md)
-- [附录G 04/06/07一致性检查报告](appendix-g.md)
+- [附录D 配套GitHub仓库设计](appendix-e.md)
+- [附录E 参考文档调研报告](appendix-f.md)
 
 ---
 

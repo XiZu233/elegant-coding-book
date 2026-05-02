@@ -8,7 +8,7 @@
 
 # 案例一：自动整理下载文件夹
 
-> [配图占位：此处应有项目目录树形图（Python CLI），详见附录D]
+![项目目录树形图（Python CLI）](assets/images/05-project-tree-cli.png)
 
 ## 需求描述
 
@@ -23,7 +23,7 @@
 
 ## 和AI的对话过程
 
-> [配图占位：此处应有 Plan Mode & Normal Mode 切换示意图，详见附录D]
+![Plan Mode 与 Normal Mode 切换示意图](assets/images/screenshots/05-plan-normal-mode.png)
 
 ### 第一轮：描述需求
 
@@ -278,7 +278,7 @@ python organize_downloads.py
 
 # 案例二：批量重命名照片
 
-> [配图占位：此处应有项目目录树形图（批量重命名照片项目结构），详见附录D]
+![项目目录树形图（批量重命名照片项目结构）](assets/images/05-project-tree-nextjs.png)
 
 ## 需求描述
 

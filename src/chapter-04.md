@@ -49,7 +49,7 @@ Claude Code 是一个**代理框架（Agentic Harness）**，它将语言模型�
 
 ### 2.2 五大内置工具类别
 
-> [配图占位：此处应有扩展功能体系层次图，详见附录D]
+![扩展功能体系层次图](assets/images/04-extension-layers.png)
 
 | 类别 | 能力 | 示例 |
 |------|------|------|
@@ -100,7 +100,7 @@ Claude Code 是一个**代理框架（Agentic Harness）**，它将语言模型�
 
 ### 4.1 核心约束：上下文窗口管理
 
-> [配图占位：此处应有上下文窗口管理示意图，详见附录D]
+![上下文窗口管理示意图](assets/images/04-context-window.png)
 
 > **最重要的约束**：Claude 的上下文窗口填充很快，随着填充，性能会下降。当窗口快满时，Claude 可能"遗忘"早期指令或犯更多错误。
 
@@ -291,7 +291,7 @@ enhance the PR description with more context
 
 ## 六、功能扩展决策树
 
-> [配图占位：此处应有功能扩展决策树，详见附录D]
+![功能扩展决策树](assets/images/04-decision-tree.png)
 
 ```
 需要持久项目约定？ ──→ CLAUDE.md（每次会话加载）
@@ -313,7 +313,7 @@ enhance the PR description with more context
 
 ## 七、权限安全模型
 
-> [配图占位：此处应有权限安全模型对比表可视化，详见附录D]
+![权限安全模型对比](assets/images/04-permission-model.png)
 
 | 模式 | 行为 | 适用场景 |
 |------|------|----------|

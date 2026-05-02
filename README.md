@@ -12,8 +12,6 @@
 
 https://xizu233.github.io/elegant-coding-book/
 
-> 请将 `XiZu233` 替换为你的 GitHub 用户名。
-
 ## 目录
 
 | 章节 | 内容 | 代码 |

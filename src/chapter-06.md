@@ -101,7 +101,7 @@ API 出问题时，按这个顺序查：**先问"网通了吗"，再问"地址�
 
 ### 2.2 环境变量（Environment Variables）
 
-> [配图占位：此处应有虚拟环境隔离示意图，详见附录D]
+![虚拟环境隔离示意图](assets/images/06-virtual-env.png)
 
 **【专业版】**
 
@@ -216,7 +216,7 @@ flask>=2.0,<3.0        # 版本范围
 
 ## 四、容器化：Docker
 
-> [配图占位：此处应有 Docker 集装箱比喻图，详见附录D]
+![Docker 集装箱比喻图](assets/images/06-docker-container.png)
 
 ### 4.1 容器化技术本质
 

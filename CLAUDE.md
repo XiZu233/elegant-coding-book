@@ -30,10 +30,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `附录A-进阶实战案例.md` | 额外练习项目 |
 | `附录B-常见错误与调试.md` | 报错排查指南 |
 | `附录C-学习目标与自检清单.md` | 每章学习目标和验收标准 |
-| `附录D-配图位置标注.md` | 全书配图占位标注与说明 |
 | `附录E-配套GitHub仓库设计.md` | 为读者设计的配套仓库结构 |
 | `附录F-参考文档调研报告.md` | 参考来源分析与可吸收知识点 |
-| `附录G-04_06_07一致性检查报告.md` | 跨章节一致性问题的诊断与修复建议 |
 
 ### 参考文档（写作素材）
 
@@ -80,7 +78,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 跨章节修改
 
-如果修改涉及多个章节（尤其是04/06/07），必须先阅读 `附录G-04_06_07一致性检查报告.md`，确认修改不会引入新的术语不一致或内容断层。
+如果修改涉及多个章节（尤其是04/06/07），先用 grep 在 src/ 目录交叉检查关键术语（如「上下文窗口」「CLAUDE.md」「Agentic Coding」等）的出现频次与解释口径，避免引入新的术语不一致或内容断层。
 
 ### 参考文档更新
 

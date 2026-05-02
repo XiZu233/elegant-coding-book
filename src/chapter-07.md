@@ -168,7 +168,7 @@ Claude Code 的最佳实践中，"Context Window"（会话的工作内存，见�
 
 ### 2.1 T 型能力：一个领域深钻 + 广泛涉猎 AI 工具
 
-> [配图占位：此处应有 T 型能力模型图，详见附录D]
+![T 型能力模型图](assets/images/07-t-shaped-skills.png)
 
 **【专业视角】**
 
@@ -217,7 +217,7 @@ Claude Code 社区提出的 "Agentic Engineering"（AI 编程工程化）范式 
 
 ### 2.3 参与开源社区：从读代码、提 Issue 开始
 
-> [配图占位：此处应有开源社区参与阶梯图，详见附录D]
+![开源社区参与阶梯图](assets/images/07-open-source-ladder.png)
 
 **【专业视角】**
 

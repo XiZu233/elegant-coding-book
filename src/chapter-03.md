@@ -10,7 +10,7 @@
 
 ## 一、时间线：从IDE插件到Agent编程
 
-> [配图占位：此处应有 AI 工具发展时间线，详见附录D]
+![AI 工具发展时间线](assets/images/03-ai-timeline.png)
 
 AI编程工具的发展经历了三个阶段，就像汽车从"手动挡辅助"进化到"自动驾驶"。
 
@@ -26,7 +26,7 @@ AI编程工具的发展经历了三个阶段，就像汽车从"手动挡辅助"�
 
 ## 二、三种形态对比：网页、桌面应用、CLI
 
-> [配图占位：此处应有三种 AI 工具形态对比图，详见附录D]
+![三种 AI 工具形态对比图](assets/images/01-ai-tool-forms.png)
 
 AI编程工具有三种"长相"，适合不同的使用场景。
 
@@ -296,7 +296,7 @@ claude --version  # 应显示 v2.1.x 或更高
 
 ### 4.2 首次启动
 
-> [配图占位：此处应有 Claude Code 首次启动界面截图，详见附录D]
+![Claude Code 首次启动界面](assets/images/03-2-claude-welcome.png)
 
 ```bash
 cd /你的项目路径
@@ -331,7 +331,7 @@ Claude Code 是框架+模型的组合，框架本身开放，可接入支持 Ant
 
 **方案：cc-switch 模型切换工具**
 
-> [配图占位：此处应有 cc-switch 界面截图，详见附录D]
+![cc-switch 界面截图](assets/images/screenshots/03-cc-switch-interface.png)
 
 1. **安装 cc-switch**：
    - macOS：`brew tap farion1231/ccswitch && brew install --cask cc-switch`
@@ -443,7 +443,7 @@ Week 2: 进阶探索（可选）
 
 ### 8.1 CLAUDE.md：项目的"宪法"
 
-> [配图占位：此处应有 CLAUDE.md 作用示意图，详见附录D]
+![CLAUDE.md 作用示意图](assets/images/03-claude-md-role.png)
 
 在项目根目录创建 `CLAUDE.md`，定义编码规范、安全红线、沟通方式。后续章节会详细讲解如何编写。
 
