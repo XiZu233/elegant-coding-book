@@ -13,7 +13,7 @@ create-missing = false
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-curly-quotes = true
+smart-punctuation = true
 copy-fonts = true
 no-section-label = false
 
