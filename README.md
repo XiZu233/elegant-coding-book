@@ -1,6 +1,6 @@
 # AI时代的优雅编程
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://[你的用户名].github.io/elegant-coding-book/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://XiZu233.github.io/elegant-coding-book/)
 
 ## 项目简介
 
@@ -10,9 +10,9 @@
 
 访问 GitHub Pages 在线阅读完整教程：
 
-https://[你的用户名].github.io/elegant-coding-book/
+https://XiZu233.github.io/elegant-coding-book/
 
-> 请将 `[你的用户名]` 替换为你的 GitHub 用户名。
+> 请将 `XiZu233` 替换为你的 GitHub 用户名。
 
 ## 目录
 
